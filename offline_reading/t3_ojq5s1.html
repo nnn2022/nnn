@@ -1,0 +1,138 @@
+<html>
+<head>
+<title>How to easily remove Youtube's "fact checker" box</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.comment
+{
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border: 2px #000 solid;
+}
+.submission
+{
+    border: 4px #00f solid;
+    padding-left: 20px;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_ojq5s1">
+    <p class="userinfo">
+        <a href="https://www.reddit.com/u/xologram">xologram</a>
+        <span class="score"> | 33 points</span>
+        <span class="timestamp"> | Jul 13 2021 22:04:38</span>
+    </p>
+    <strong>How to easily remove Youtube's "fact checker" box</strong>
+    <p><p>I got sick of youtube's "fact checker" box on "controversial" subjects so I found an easy way to remove it. Download and install uBlock Origin for your browser. Right click the uBlock icon and choose <strong>Options</strong>. Select <strong>My filters</strong> tab and drop this in the text box:</p>
+<pre><code>www.youtube.com###clarify-box
+www.youtube.com##ytd-clarification-renderer.ytd-item-section-renderer.style-scope
+</code></pre>
+<p>Click <strong>Apply changes</strong>, refresh youtube and enjoy.</p></p>
+    <p class="toolbar">
+        <a href="https://www.reddit.com/r/NoNewNormal/comments/ojq5s1">permalink</a>
+    </p>
+</div>
+<div class="comment" id="t1_h53arkb">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Zerberus1803">Zerberus1803</a>
+        <span class="score"> | 8 points</span>
+        <span class="timestamp"> | Jul 13 2021 22:49:37</span>
+    </p>
+    <div class="collapsible">
+        <p>Works like a charm! Thanks!</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/ojq5s1/_/h53arkb">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_h54ofz5">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/ScoundrelPrince">ScoundrelPrince</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Jul 14 2021 07:13:44</span>
+    </p>
+    <div class="collapsible">
+        <p>I use Brave as a browser. No tracking, no ads, no pop ups. It's good stuff, worth checking out.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/ojq5s1/_/h54ofz5">permalink</a>
+        </p>
+        <div class="comment" id="t1_h5679l2">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/xologram">xologram</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Jul 14 2021 16:45:10</span>
+    </p>
+    <div class="collapsible">
+        <p>I use it too, it's basically Chromium with adblocker and metamask crypto wallet builtin. Though its adblocker cannot block a custom filter like this, but uBlock Origin does the trick</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/ojq5s1/_/h5679l2">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_h54dwk5">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/coffee_now21">coffee_now21</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Jul 14 2021 04:53:27</span>
+    </p>
+    <div class="collapsible">
+        <p>Thank you so much, that so-called fact checker box was starting to drive me mental!!!</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/ojq5s1/_/h54dwk5">permalink</a>
+        </p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

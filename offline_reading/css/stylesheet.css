@@ -1,0 +1,127 @@
+div.titlebox .users-online span.word {
+display: nones 
+}
+div.titlebox .users-online span.number:after {
+content: " are here right now" }
+
+div.titlebox span.word {
+    display: none
+    }
+div.titlebox span.number:after {
+    content: " Free Thinkers"
+    }
+
+/* Submit page changes */
+
+div.formtabs-content div.usertext-edit div.bottom-area::after{content:"If you submit text, it won't also submit the link, so if you want both then put the link into your text submission!";color:#922;font-family:arial;font-size:12px;font-weight:bold}
+
+#link-desc {
+    font-size:small;
+}
+#link-desc:after {
+    font-size:small;
+    content:" Please refer to our rules before posting.";
+}
+
+#text-desc {
+    font-size:0;
+}
+#text-desc:after {
+    font-size:small;
+    content:"You are submitting a text post. Speak your mind. A title is required, but expanding further in the text field is not. Refer to our rules before posting.";
+}
+
+/* submit buttons */
+
+.morelink{font-weight:normal;letter-spacing:0;background:#336699;border:none;-moz-border-radius:2px;-webkit-border-radius:2px;-o-border-radius:2px;-ms-border-radius:2px;-khtml-border-radius:2px;border-radius:2px;height:30px;line-height:30px;overflow:hidden;color:white}.morelink:hover{background:#A7B9CB;background-color:#8D8D8D;border-color:#8D8D8D}.morelink .nub{display:none}.morelink{color:#FFF;font-family:Verdana,Arial,sans-serif;font-size:16px;width:145px}.morelink a,.morelink a:hover{color:white}.sidebox.submit-link .morelink::before{display:block;clear:none;content:"Submit a Link";font-size:95%}.sidebox.submit-text .morelink::before{display:block;clear:none;content:"Submit a Self Post";font-size:90%}.sidebox.submit .morelink a{position:absolute;top:0;padding-left:1000px;font-size:0px;text-align:right;color:#56a6f7}.sidebox.submit.submit-link{width:150px}.sidebox.submit.submit-text{margin-top:-42px;margin-left:153px}.sidebox.create{display:none}.sidebox.submit.disabled{display:none}.res-nightmode .sidebox.submit.submit-text{background:none!important;margin-top:-45px;margin-left:153px}.res-nightmode .sidebox{padding-left:0px!important;border:2px solid #151515!important}.res-nightmode .morelink{height:29px!important}.res-nightmode .morelink{background:rgb(39,63,87)!important}.res-nightmode .morelink:hover{background:#449ef8!important;background-color:#9edbf8!important;border-color:#9edbf8!important}
+
+/* flair reminder */
+
+.post-submitter .link:not(.linkflair) .flairselectbtn { position: relative; }
+
+.post-submitter .link:not(.linkflair) .flairselectbtn:before {
+position: absolute;
+content: 'Click here to add flair or it will be removed!';
+background: rgba(255,0,0,.7);
+color: #fff;
+top: -2em;
+left: -8em;
+height: 1.5em;
+padding: 0 .5em;
+line-height: 1.5;
+text-align: center; }
+
+.post-submitter .link:not(.linkflair) .flairselectbtn:after {
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 1em .5em 0;
+border-color: rgba(255,0,0,.7) transparent transparent;
+top: -.8em;
+left: .3em;
+content: '';
+position: absolute; }
+
+/***** Sidebar headings *****/
+.titlebox blockquote {
+    border: 1px solid #AAA;
+    text-shadow: 0 1px 0 white;
+    color: #787878;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.titlebox {
+    padding: 10px;
+    background: transparent; /*Sidebar Background color*/
+    border: 1px solid #AAA; /*Sidebar border color*/
+    color: #787878; /*Text color in sidebar*/
+    border-radius: 10px;
+}
+/***** Collapsible menu *****/
+.titlebox .md h3 + ul {
+    margin: 0 2em;
+    padding: 3px;
+ }
+.titlebox .md h3, div.titlebox .md h3 a {
+    color: #eee; /*General Header text color*/
+ }
+.titlebox .md h3 + ul {
+    display: none;
+ }
+.titlebox .md h3:hover + ul,
+.titlebox .md h3 + ul:hover {
+    display: block;
+}
+.titlebox .md h3 + ul li:hover {
+    background-color: #eee; 
+  /*Color you seen when ^ hovering over sidebar items*/
+}
+.res-nightmode .titlebox .md h3 + ul li:hover {
+    background-color: #393939;
+  /*Color you seen when ^ hovering over sidebar items- Nightmode*/
+}
+.titlebox .md h3 {
+    background-color: #336699; /*### background color*/
+    color: #fff; /*### Text color*/
+    width: 280px;
+    line-height: 35px;
+    font-weight: normal;
+    font-size: 22px;
+    cursor: pointer;
+    padding-left: 20px;
+    margin: 4px 0 0 -11px;
+}
+.res-nightmode .titlebox .md h3 { 
+    background-color: #7a9642; /*Nightmode background color*/
+}
+.titlebox .md h3:after {
+    margin-bottom: 10px;
+}
+.titlebox .md h3:before { 
+    content: "+"; 
+    color: #fff; /*color of the + in ###*/
+padding-right: 5px; 
+} 
+.titlebox .md h3 + ul {
+    line-height: 1.7em
+}

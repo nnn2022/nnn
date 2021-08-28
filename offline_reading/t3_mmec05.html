@@ -1,0 +1,96 @@
+<html>
+<head>
+<title>This is very scary</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.comment
+{
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border: 2px #000 solid;
+}
+.submission
+{
+    border: 4px #00f solid;
+    padding-left: 20px;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_mmec05">
+    <p class="userinfo">
+        <a href="https://www.reddit.com/u/P-L-E-O">P-L-E-O</a>
+        <span class="score"> | 13 points</span>
+        <span class="timestamp"> | Apr 07 2021 23:04:00</span>
+    </p>
+    <strong>This is very scary</strong>
+    <p><a href="https://youtu.be/vzMTFENUyBA">https://youtu.be/vzMTFENUyBA</a></p>
+    <p class="toolbar">
+        <a href="https://www.reddit.com/r/NoNewNormal/comments/mmec05">permalink</a>
+    </p>
+</div>
+<div class="comment" id="t1_gtrohgu">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Pebmarsh">Pebmarsh</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Apr 08 2021 03:21:07</span>
+    </p>
+    <div class="collapsible">
+        <p>Fuck em. Live your life.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/mmec05/_/gtrohgu">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gtr6pys">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/ohsun3">ohsun3</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Apr 08 2021 00:47:42</span>
+    </p>
+    <div class="collapsible">
+        <p>Canada, my Canada</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/mmec05/_/gtr6pys">permalink</a>
+        </p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

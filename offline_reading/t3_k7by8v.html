@@ -1,0 +1,69 @@
+<html>
+<head>
+<title>Short review of recent article on (Conventional) Vaccine Risk</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.comment
+{
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border: 2px #000 solid;
+}
+.submission
+{
+    border: 4px #00f solid;
+    padding-left: 20px;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_k7by8v">
+    <p class="userinfo">
+        <a href="https://www.reddit.com/u/IridescentAnaconda">IridescentAnaconda</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Dec 05 2020 17:47:08</span>
+    </p>
+    <strong>Short review of recent article on (Conventional) Vaccine Risk</strong>
+    <p><p>In light of the imminent vaccine mandates that will likely be unavoidable for most of us, I have decided to post a short review of a paper I recently became aware of, "Relative Incidence of Office Visits and Cumulative Rates of Billed Diagnoses Along the Axis of Vaccination", <a href="https://www.mdpi.com/1660-4601/17/22/8674/htm">Lyons-Weiler &amp; Thomas (Int. J. Environ. Res. Public Health, 2020)</a></p>
+<p><strong>Summary</strong>:  The authors conduct a retrospective comparison of different vaccination exposure groups (non-vaccinated vs. variably-vaccinated).  The study population consisted of patients ranging in age from 2 months to 10.4 years from a private pediatric practice located in Portland, Oregon. The inclusion/exclusion criteria led to 3324 patients, of which 2763 were variably vaccinated, having received 1 to 40 vaccines.  A novel metric is proposed -- Relative Incidence of Office Visit (RIOV) -- which the authors argue is a more powerful metric (presumably taking disease severity into account).  However, the authors do also report odds ratios and relative risks, which show similar signals in unmatched analyses.  Additionally the authors report odds ratios and risks ratios under various matching scenarios.</p>
+<p><strong>Comments</strong>:  The writing is sloppy in places, with some parts very opaque, especially the description of RIOV.  It took me several readings to understand exactly what RIOV is -- simply a proxy for disease severity instead of simply a diagnosis rate ratio. In addition, statistical analysis could have been a bit more sophisticated in certain places.  These shortcomings are unfortunate because they render the entire study vulnerable to extreme criticism, especially given its controversial nature and in light of the obvious bias of the authors (evident in the Discussion section when the authors discuss informed consent).  <strong>Nevertheless the data set seems valuable and the results are somewhat compelling.</strong></p>
+<p>My major concern is the the authors did not jointly adjust for confounding by two different factors.  The first factor is family history of disease:</p>
+<p>&rt; Among the vaccinated, 25.16% had a family history of autoimmunity, whereas among the unvaccinated, 31% had the same characteristic.</p>
+<p>Thus there is a high potential for confounding by genetics and/or healthcare decisions influenced by prior autoimmune events.  However, the authors attempt to address this in one of their analyses:</p>
+<p>&rt; Data on family history of autoimmune disorders or autism were used to block patients into those who had a family history on record (FH+) and those who did not (FH−; blocked design). Average RIOV ratios were calculated to determine whether increased vaccination was associated with increased relative incidence of office visitations in both clinical groups (similar to analysis 1), given family history (FH+ and FH−). The results are not otherwise matched or blocked.</p>
+<p>The second confounding factor is healthcare seeking behavior (possibly more prevalent in the vaccinated group).  The authors use days-of-care (DOC, last visit date minus first visit date) to adjust for this confounder, but I disagree that this adjustment is adequate.  In Table 3, the DOC-adjusted RIOV for wellness check is 1.045 (p=0.03, i.e. marginally significant), possibly indicating that the unvaccinated group sought slightly less healthcare overall even after adjusting for DOC.</p>
+<p>What would have been optimal is (if possible) to block both on DOC and family history, or even DOC and wellness-check visit categories, or (if not possible) otherwise adjust for these factors simultaneously using an appropriate regression model.  However, I do find the positive/negative control analysis to be somewhat convincing (see also Figure 3):</p>
+<p>&rt; It is well known that “fever” is a side effect of vaccination. In this analysis, we therefore used incidence of “fever” as positive controls on trends in the data. Similarly, “Well Child” visits can be considered a type of negative control given that they were regularly scheduled events and that they set a comparator value of RIOV for other outcomes</p>
+<p><strong>Overall it does appear that even after adjusting for family history and (separately) adjusting for DOC there are marked increases in a number of serious conditions, comparing vaccinated to unvaccinated groups.  In particular, see Tables 3, 5, and 6.  Figure 5 is also very compelling.</strong>  </p>
+<p>Finally, both the Introduction and Discussion sections provide a short review of other published literature calling into question the conventional wisdom that approved vaccines are always safe.</p></p>
+    <p class="toolbar">
+        <a href="https://www.reddit.com/r/NoNewNormal/comments/k7by8v">permalink</a>
+    </p>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

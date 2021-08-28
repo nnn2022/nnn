@@ -1,0 +1,96 @@
+<html>
+<head>
+<title>Quick Fact!</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.comment
+{
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border: 2px #000 solid;
+}
+.submission
+{
+    border: 4px #00f solid;
+    padding-left: 20px;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_kum4kt">
+    <p class="userinfo">
+        <a href="https://www.reddit.com/u/Schmovid">Schmovid</a>
+        <span class="score"> | 42 points</span>
+        <span class="timestamp"> | Jan 10 2021 20:23:22</span>
+    </p>
+    <strong>Quick Fact!</strong>
+    <p><p>During a real pandemic people don't argue over if it's real or not!</p></p>
+    <p class="toolbar">
+        <a href="https://www.reddit.com/r/NoNewNormal/comments/kum4kt">permalink</a>
+    </p>
+</div>
+<div class="comment" id="t1_gissykd">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/BellaRojoSoliel">BellaRojoSoliel</a>
+        <span class="score"> | 25 points</span>
+        <span class="timestamp"> | Jan 10 2021 21:10:10</span>
+    </p>
+    <div class="collapsible">
+        <p>If I was stepping over dead bodies when I dared to leave my house—then you wouldn’t have to force me to self isolate.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/kum4kt/_/gissykd">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gisp32v">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Jan 10 2021 20:40:08</span>
+    </p>
+    <div class="collapsible">
+        <p>[removed]</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/kum4kt/_/gisp32v">permalink</a>
+        </p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>Hovering Over Google!</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.comment
+{
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border: 2px #000 solid;
+}
+.submission
+{
+    border: 4px #00f solid;
+    padding-left: 20px;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_o5ninh">
+    <p class="userinfo">
+        <a href="https://www.reddit.com/u/RealVaultteam6">RealVaultteam6</a>
+        <span class="score"> | 9 points</span>
+        <span class="timestamp"> | Jun 22 2021 13:45:23</span>
+    </p>
+    <strong>Hovering Over Google!</strong>
+    <p><a href="https://i.redd.it/kdt0ouxz8s671.jpg">https://i.redd.it/kdt0ouxz8s671.jpg</a></p>
+    <p class="toolbar">
+        <a href="https://www.reddit.com/r/NoNewNormal/comments/o5ninh">permalink</a>
+    </p>
+</div>
+<div class="comment" id="t1_h2o1bm4">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/goldenstar007">goldenstar007</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Jun 22 2021 16:31:37</span>
+    </p>
+    <div class="collapsible">
+        <p>Fuck them all</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/o5ninh/_/h2o1bm4">permalink</a>
+        </p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

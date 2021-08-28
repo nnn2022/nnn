@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>Checkmate</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.comment
+{
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border: 2px #000 solid;
+}
+.submission
+{
+    border: 4px #00f solid;
+    padding-left: 20px;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_npwkih">
+    <p class="userinfo">
+        <a href="https://www.reddit.com/u/Joiion">Joiion</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Jun 01 2021 15:26:15</span>
+    </p>
+    <strong>Checkmate</strong>
+    <p><a href="https://i.redd.it/f33qeenw9o271.jpg">https://i.redd.it/f33qeenw9o271.jpg</a></p>
+    <p class="toolbar">
+        <a href="https://www.reddit.com/r/NoNewNormal/comments/npwkih">permalink</a>
+    </p>
+</div>
+<div class="comment" id="t1_h0c5b3g">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/OrangeTallion">OrangeTallion</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Jun 02 2021 17:28:15</span>
+    </p>
+    <div class="collapsible">
+        <p>Hey didn't that meme die out like, 9 years ago?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/npwkih/_/h0c5b3g">permalink</a>
+        </p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

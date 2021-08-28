@@ -1,0 +1,94 @@
+<html>
+<head>
+<title>Pro Reddit tip, you can downvote posts and comments on subreddits you’re banned from</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.comment
+{
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border: 2px #000 solid;
+}
+.submission
+{
+    border: 4px #00f solid;
+    padding-left: 20px;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_p0ognf">
+    <p class="userinfo">
+        <a href="https://www.reddit.com/u/peternunan21">peternunan21</a>
+        <span class="score"> | 5 points</span>
+        <span class="timestamp"> | Aug 08 2021 22:27:09</span>
+    </p>
+    <strong>Pro Reddit tip, you can downvote posts and comments on subreddits you’re banned from</strong>
+    <p></p>
+    <p class="toolbar">
+        <a href="https://www.reddit.com/r/NoNewNormal/comments/p0ognf">permalink</a>
+    </p>
+</div>
+<div class="comment" id="t1_h87y9lv">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/leftey_">leftey_</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Aug 08 2021 22:36:44</span>
+    </p>
+    <div class="collapsible">
+        <p>can you though? sure the interface makes it appear you do, but does it really get submitted in the algorithm?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/p0ognf/_/h87y9lv">permalink</a>
+        </p>
+        <div class="comment" id="t1_h87ykoo">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/peternunan21">peternunan21</a>
+        <span class="score"> | 0 points</span>
+        <span class="timestamp"> | Aug 08 2021 22:39:16</span>
+    </p>
+    <div class="collapsible">
+        <p>Posted a link but it was very old. I have read that they count and that they don’t count so I’m actually not quite sure.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/p0ognf/_/h87ykoo">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

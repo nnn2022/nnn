@@ -1,0 +1,501 @@
+<html>
+<head>
+<title>estimated risk of death for Pfizer, Moderna and AZ: 1 in 2174, risk of injury: 1 in 27</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.comment
+{
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border: 2px #000 solid;
+}
+.submission
+{
+    border: 4px #00f solid;
+    padding-left: 20px;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_mrp6y5">
+    <p class="userinfo">
+        <a href="https://www.reddit.com/u/loopfission">loopfission</a>
+        <span class="score"> | 43 points</span>
+        <span class="timestamp"> | Apr 15 2021 22:00:09</span>
+    </p>
+    <strong>estimated risk of death for Pfizer, Moderna and AZ: 1 in 2174, risk of injury: 1 in 27</strong>
+    <p><p>On 13/04/2021 there are 7,192 deaths and 477,925 adverse reactions for Pfizer, Moderna and AstraZeneca in the EudraVigilance - European database of suspected adverse drug reaction reports.</p>
+<p>There are 328,170 adverse reactions reports for healthcare professionals (for Pfizer, Moderna and AstraZeneca on 13/04/2021).</p>
+<p>In 2018 it is estimated there were 8.74 million healthcare professionals in Europe. With the estimation that this number consented to have the vaccine, the risk of injury is:</p>
+<pre><code>risk of injury = no healthcare prof vaccinated / no healthcare prof reactions
+= 8740000 / 328170 = 1 in 27
+</code></pre>
+<p>From the Reaction group reports for each vaccine, I estimate the deaths of healthcare professionals by multiplying the Fatal reports for each Reaction Group for each vaccine by the ratio of the number of reaction reports for that reaction group of healthcare professionals, divided by the total number of reactions.</p>
+<pre><code>risk of death = no healthcare prof vaccinated / no healthcare prof deaths
+= 8740000 / 4020 = 1 in 2174
+
+
+|   | Vaccine     |     HP | Non HP | Reactions | Fatal | HP Fatal est |
+|---+-------------+--------+--------+-----------+-------+--------------|
+| # | Pfizer      | 198096 | 130578 |    328674 |  4036 |         2496 |
+| # | Moderna     |  21173 |  14689 |     35862 |  1922 |         1202 |
+| # | AstraZeneca | 108901 |   4488 |    113389 |  1234 |          322 |
+| _ |             |     ht |     nt |        rt |    ft |          thf |
+| # |             | 328170 | 149755 |    477925 |  7192 |         4020 |
+| ! |             |      h |      n |         r |     f |           hf |
+#+TBLFM: $5=$h+$n;%0.f::$ht=vsum(@2$h..@-2$h);%.0f::::$nt=vsum(@2$n..@-2$n);%.0f::::$rt=vsum(@2$r..@-2$r);%.0f::$ft=vsum(@2$f..@-2$f);%.0f::$thf=vsum(@2$hf..@-2$hf);%.0f
+
+
+|   |                                                             |         |
+|---+-------------------------------------------------------------+---------|
+| # | 1.7 million practising physicians across the EU-27 in 2018. | 1700000 |
+| # | 3.1 million practising nursing professionals                | 3100000 |
+| # | some 150 000 practising midwives;                           |  150000 |
+| # | some 390 000 practising nursing associate professionals     |  390000 |
+| # | around 3.4 million practising healthcare assistants         | 3400000 |
+| _ |                                                             |      ht |
+| # |                                                             | 8740000 |
+| ! |                                                             |       h |
+#+TBLFM: $ht=vsum(@2$h..@-2$h);%.0f
+
+
+|   | EMA Pfizer Reaction Groups  |     HP | Non HP | Reactions | Fatal | HP Fat |
+|---+-----------------------------+--------+--------+-----------+-------+--------|
+| # | Blood and lymphatic sys dis |   6769 |   3536 |     10305 |    34 |     22 |
+| # | Cardiac disorders           |   4631 |   2023 |      6654 |   470 |    327 |
+| # | Congenital fam &amp; gen dis    |     28 |     16 |        44 |     2 |      1 |
+| # | Ear and labyr dis           |   2302 |   1423 |      3725 |     2 |      1 |
+| # | Endocrine disorders         |     61 |     32 |        93 |     0 |      0 |
+| # | Eye disorders               |   2408 |   1746 |      4154 |     5 |      3 |
+| # | Gastro disorders            |  17721 |  13091 |     30812 |   207 |    119 |
+| # | General dis &amp; admin site    |  59365 |  36582 |     95947 |  1331 |    824 |
+| # | Hepatobiliary disorders     |    135 |     47 |       182 |    14 |     10 |
+| # | Immune system disorders     |   2280 |    675 |      2955 |    17 |     13 |
+| # | Infections and infest       |   5331 |   3587 |      8918 |   487 |    291 |
+| # | Injury pois &amp; proc comp     |   1998 |   1368 |      3366 |    70 |     42 |
+| # | Investigations              |   3606 |   3170 |      6776 |   153 |     81 |
+| # | Metabolism &amp; nutr dis       |   1204 |   1066 |      2270 |    81 |     43 |
+| # | Musculoskel &amp; con tis dis   |  27921 |  21822 |     49743 |    42 |     24 |
+| # | Neoplasms incl cysts &amp; p    |     44 |     76 |       120 |     7 |      3 |
+| # | Nervous system disorders    |  34751 |  25751 |     60502 |   356 |    204 |
+| # | Pregnancy puerp &amp; per       |     90 |     68 |       158 |     6 |      3 |
+| # | Product issues              |     51 |     20 |        71 |     0 |      0 |
+| # | Psychiatric disorders       |   3101 |   2279 |      5380 |    57 |     33 |
+| # | Renal and urinary dis       |    445 |    384 |       829 |    58 |     31 |
+| # | Reproductive sys &amp; br dis   |    422 |    411 |       833 |     1 |      1 |
+| # | Respiratory thor &amp; medl d   |   8070 |   4404 |     12474 |   454 |    294 |
+| # | Skin and subcut tis dis     |  10006 |   4645 |     14651 |    34 |     23 |
+| # | Social circumstances        |    175 |    201 |       376 |     6 |      3 |
+| # | Surgical and med procs      |     69 |     34 |       103 |     5 |      3 |
+| # | Vascular disorders          |   5112 |   2121 |      7233 |   137 |     97 |
+| _ |                             |     ht |     nt |        rt |    ft |    thf |
+| # |                             | 198096 | 130578 |    328674 |  4036 |   2496 |
+| ! |                             |      h |      n |         r |     f |     hf |
+#+TBLFM: $5=$h+$n;%0.f::$7=$f*($h/($h+$n));%.0f::$ht=vsum(@2$h..@-2$h);%.0f::::$nt=vsum(@2$n..@-2$n);%.0f::::$rt=vsum(@2$r..@-2$r);%.0f::$ft=vsum(@2$f..@-2$f);%.0f::$thf=vsum(@2$hf..@-2$hf);%.0f
+
+
+|   | EMA Moderna Reaction Groups |    HP | Non HP | Reactions | Fatal | HP Fat |
+|---+-----------------------------+-------+--------+-----------+-------+--------|
+| # | Blood and lymphatic sys dis |   419 |    265 |       684 |    13 |      8 |
+| # | Cardiac disorders           |   825 |    232 |      1057 |   191 |    149 |
+| # | Congenital fam &amp; gen dis    |     3 |      2 |         5 |     1 |      1 |
+| # | Ear and labyr dis           |   165 |    132 |       297 |     0 |      0 |
+| # | Endocrine disorders         |    15 |      3 |        18 |     0 |      0 |
+| # | Eye disorders               |   296 |    152 |       448 |     2 |      1 |
+| # | Gastro disorders            |  1753 |   1405 |      3158 |    67 |     37 |
+| # | General dis &amp; admin site    |  5751 |   4439 |     10190 |   852 |    481 |
+| # | Hepatobiliary disorders     |    51 |      8 |        59 |     2 |      2 |
+| # | Immune system disorders     |   294 |    104 |       398 |     1 |      1 |
+| # | Infections and infest       |   796 |    352 |      1148 |    99 |     69 |
+| # | Injury pois &amp; proc comp     |   426 |    177 |       603 |    37 |     26 |
+| # | Investigations              |   533 |    381 |       914 |    55 |     32 |
+| # | Metabolism &amp; nutr dis       |   307 |    111 |       418 |    39 |     29 |
+| # | Musculoskel &amp; con tis dis   |  2053 |   2591 |      4644 |    39 |     17 |
+| # | Neoplasms incl cysts &amp; p    |    26 |     14 |        40 |     5 |      3 |
+| # | Nervous system disorders    |  3298 |   2769 |      6067 |   201 |    109 |
+| # | Pregnancy puerp &amp; per       |    34 |      5 |        39 |     0 |      0 |
+| # | Product issues              |     4 |      3 |         7 |     0 |      0 |
+| # | Psychiatric disorders       |   487 |    204 |       691 |    29 |     20 |
+| # | Renal and urinary dis       |   179 |     60 |       239 |    21 |     16 |
+| # | Reproductive sys &amp; br dis   |    54 |     36 |        90 |     1 |      1 |
+| # | Respiratory thor &amp; medl d   |  1366 |    414 |      1780 |   169 |    130 |
+| # | Skin and subcut tis dis     |  1198 |    542 |      1740 |    19 |     13 |
+| # | Social circumstances        |   109 |     25 |       134 |     6 |      5 |
+| # | Surgical and med procs      |    71 |     22 |        93 |    11 |      8 |
+| # | Vascular disorders          |   660 |    241 |       901 |    62 |     45 |
+| _ |                             |    ht |     nt |        rt |    ft |    thf |
+| # |                             | 21173 |  14689 |     35862 |  1922 |   1203 |
+| ! |                             |     h |      n |         r |     f |     hf |
+#+TBLFM: $5=$h+$n;%0.f::$7=$f*($h/($h+$n));%.0f::$ht=vsum(@2$h..@-2$h);%.0f::::$nt=vsum(@2$n..@-2$n);%.0f::::$rt=vsum(@2$r..@-2$r);%.0f::$ft=vsum(@2$f..@-2$f);%.0f::$thf=vsum(@2$hf..@-2$hf);%.0f
+
+
+|   | EMA AZ Reaction Groups      |     HP | Non HP | Reactions | Fatal | HP Fat |
+|---+-----------------------------+--------+--------+-----------+-------+--------|
+| # | Blood and lymphatic sys dis |   1298 |   3309 |      4607 |    49 |     14 |
+| # | Cardiac disorders           |   2071 |   4445 |      6516 |   160 |     51 |
+| # | Congenital fam &amp; gen dis    |     11 |     53 |        64 |     2 |      0 |
+| # | Ear and labyr dis           |    970 |   3363 |      4333 |     0 |      0 |
+| # | Endocrine disorders         |     49 |     77 |       126 |     2 |      1 |
+| # | Eye disorders               |   1586 |   5188 |      6774 |     4 |      1 |
+| # | Gastro disorders            |  11596 |  39671 |     51267 |    46 |     10 |
+| # | General dis &amp; admin site    |  31082 |  95336 |    126418 |   414 |    102 |
+| # | Hepatobiliary disorders     |     88 |    103 |       191 |     6 |      3 |
+| # | Immune system disorders     |    758 |    880 |      1638 |     6 |      3 |
+| # | Infections and infest       |   2199 |   7465 |      9664 |    88 |     20 |
+| # | Injury pois &amp; proc comp     |    784 |   2879 |      3663 |    14 |      3 |
+| # | Investigations              |   1688 |   6647 |      8335 |    17 |      3 |
+| # | Metabolism &amp; nutr dis       |   1543 |   5009 |      6552 |    12 |      3 |
+| # | Musculoskel &amp; con tis dis   |  16130 |  57548 |     73678 |     9 |      2 |
+| # | Neoplasms incl cysts &amp; p    |     25 |     99 |       124 |     3 |      1 |
+| # | Nervous system disorders    |  22564 |  77449 |    100013 |   175 |     39 |
+| # | Pregnancy puerp &amp; per       |     34 |     48 |        82 |     0 |      0 |
+| # | Product issues              |     11 |     31 |        42 |     0 |      0 |
+| # | Psychiatric disorders       |   1983 |   6676 |      8659 |     9 |      2 |
+| # | Renal and urinary dis       |    418 |   1172 |      1590 |     9 |      2 |
+| # | Reproductive sys &amp; br dis   |    306 |   1314 |      1620 |     0 |      0 |
+| # | Respiratory thor &amp; medl d   |   3844 |   9987 |     13831 |   125 |     35 |
+| # | Skin and subcut tis dis     |   5239 |  15598 |     20837 |     7 |      2 |
+| # | Social circumstances        |     95 |    179 |       274 |     3 |      1 |
+| # | Surgical and med procs      |     90 |    256 |       346 |     9 |      2 |
+| # | Vascular disorders          |   2519 |   4488 |      7007 |    65 |     23 |
+| _ |                             |     ht |     nt |        rt |    ft |    thf |
+| # |                             | 108981 | 349270 |    458251 |  1234 |    323 |
+| ! |                             |      h |      n |         r |     f |     hf |
+#+TBLFM: $5=$h+$n;%0.f::$7=$f*($h/($h+$n));%.0f::$ht=vsum(@2$h..@-2$h);%.0f::::$nt=vsum(@2$n..@-2$n);%.0f::::$rt=vsum(@2$r..@-2$r);%.0f::$ft=vsum(@2$f..@-2$f);%.0f::$thf=vsum(@2$hf..@-2$hf);%.0f
+</code></pre>
+<p>&#x200B;</p>
+<p><a href="https://i.redd.it/4qxs9zyiset61.gif">Pfizer Reaction groups 13\/04\/2021</a></p>
+<p><a href="https://i.redd.it/iuvg847nset61.gif">Moderna Reaction groups 13\/04\/2021</a></p>
+<p><a href="https://i.redd.it/fukow35qset61.gif">EMA AstraZeneca Reaction groups 13\/04\/2021</a></p>
+<p><a href="https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Healthcare_personnel_statistics_-_physicians">physicians</a></p>
+<p><a href="https://ec.europa.eu/eurostat/statistics-explained/index.php/Healthcare_personnel_statistics_-_nursing_and_caring_professionals#Healthcare_personnel">nursing and caring professionals</a></p>
+<p>Edit: I provided an updated post with the 17/4/2021 data with some data on the medical experiments on children and babies here:</p>
+<p><a href="https://www.reddit.com/r/NoNewNormal/comments/muslag/estimated_risk_of_death_for_pfizer_moderna_and_az/">https://www.reddit.com/r/NoNewNormal/comments/muslag/estimated_risk_of_death_for_pfizer_moderna_and_az/</a></p></p>
+    <p class="toolbar">
+        <a href="https://www.reddit.com/r/NoNewNormal/comments/mrp6y5">permalink</a>
+    </p>
+</div>
+<div class="comment" id="t1_gunnv21">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/maileggs2">maileggs2</a>
+        <span class="score"> | 17 points</span>
+        <span class="timestamp"> | Apr 15 2021 22:11:45</span>
+    </p>
+    <div class="collapsible">
+        <p>and that doesn't include the long term stuff yet. Worse odds than Covid itself.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/mrp6y5/_/gunnv21">permalink</a>
+        </p>
+        <div class="comment" id="t1_gunrl6l">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Well_hung_Yakuza">Well_hung_Yakuza</a>
+        <span class="score"> | 7 points</span>
+        <span class="timestamp"> | Apr 15 2021 22:42:24</span>
+    </p>
+    <div class="collapsible">
+        <p>that's the really worrying stuff anf we're not even there yet</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/mrp6y5/_/gunrl6l">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_gunostr">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Orias_Rofocale">Orias_Rofocale</a>
+        <span class="score"> | 10 points</span>
+        <span class="timestamp"> | Apr 15 2021 22:19:16</span>
+    </p>
+    <div class="collapsible">
+        <p>Yeah, if this is how it pans out, that is worse than my risk against covid.  My insane friends are still all getting vaxxed up because even one who just got over covid three weeks ago was so convinced that his natural immunity was completely meaningless, he went and injected the spike protein into himself and got fantastically sick.</p>
+<p>He was afraid of what it will be the next time, but got quickly shamed back into the importance of getting the second jab.</p>
+<p>I'm sad that I'm going to lose all my friends to this.  I love that DnD game we all play, but it's not worth being a lab rat over.  Nothing is.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/mrp6y5/_/gunostr">permalink</a>
+        </p>
+        <div class="comment" id="t1_guyqcit">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/_vlad__">_vlad__</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Apr 18 2021 13:00:49</span>
+    </p>
+    <div class="collapsible">
+        <p>so if this estimate is real, how many people have already died because of the vaccine?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/mrp6y5/_/guyqcit">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_gunpefc">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Sweitzenhammer">Sweitzenhammer</a>
+        <span class="score"> | 8 points</span>
+        <span class="timestamp"> | Apr 15 2021 22:24:07</span>
+    </p>
+    <div class="collapsible">
+        <p>Somebody check my math:  If the world has 8 billion people and we round up to 3 million deaths in the last year (I know it's inflated, but bear with me) you get 0.000375, which means any persons chances of dying of COVID are 1 in 2,667.  That less than the risk of death from the vaccine, for healthcare professionals, in Europe.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/mrp6y5/_/gunpefc">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gunpo1t">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Isinksometime">Isinksometime</a>
+        <span class="score"> | 5 points</span>
+        <span class="timestamp"> | Apr 15 2021 22:26:18</span>
+    </p>
+    <div class="collapsible">
+        <p>Crazy.. real numbers don’t lie</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/mrp6y5/_/gunpo1t">permalink</a>
+        </p>
+        <div class="comment" id="t1_gvvpu1h">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/MKULTRA007">MKULTRA007</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Apr 26 2021 01:15:12</span>
+    </p>
+    <div class="collapsible">
+        <p>Except his math is off by a factor of 1000</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/mrp6y5/_/gvvpu1h">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_guq6c0e">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/NoneOfYourBusiness82">NoneOfYourBusiness82</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Apr 16 2021 14:18:06</span>
+    </p>
+    <div class="collapsible">
+        <p>I tired to go past the "allowed views" but it seems impossible to get access to make one's own queries to the database. They certainly aren't making it easy to obtain data from there.</p>
+<p>VAERS is actually better in that sense</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/mrp6y5/_/guq6c0e">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_guorozo">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/NSorrenti">NSorrenti</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Apr 16 2021 04:04:01</span>
+    </p>
+    <div class="collapsible">
+        <p>Can you explain more where you got these numbers and the source for the death numbers? Your sources only show practicing healthcare professional numbers. Where did you get the adverse reactions/ deaths numbers?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/mrp6y5/_/guorozo">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gup316f">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/TheodoraGriffon">TheodoraGriffon</a>
+        <span class="score"> | 0 points</span>
+        <span class="timestamp"> | Apr 16 2021 06:22:58</span>
+    </p>
+    <div class="collapsible">
+        <p>Just visiting the sub, and the information here in this post isn’t very good. You literally are 3x more like to get struck by lightning than you are to die from vaccination. “Over 189 million doses of COVID-19 vaccines were administered in the United States from December 14, 2020, through April 12, 2021. During this time, VAERS received 3,005 reports of death (0.00158%) among people who received a COVID-19 vaccine” 
+Thus number is all deaths reported but not confirmed as due to vaccination- so the rate will be lower than 0.00158% 
+If those 3005 reports of death 67% were Long Term Care Facility residents and this population is more likely to “unexpectedly “ die than any other age group, not to mention most have DNR orders on file. Just saying- it’s really not what your post says. Also, in fairness my numbers are exclusively US so only includes Pfizer, Moderna and J&amp;J.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/mrp6y5/_/gup316f">permalink</a>
+        </p>
+        <div class="comment" id="t1_gupbd08">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/loopfission">loopfission</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Apr 16 2021 08:28:25</span>
+    </p>
+    <div class="collapsible">
+        <p>According to a U.S. Department of Health and Human Services <a href="https://digital.ahrq.gov/sites/default/files/docs/publication/r18hs017045-lazarus-final-report-2011.pdf">study</a>, the actual number of <a href="https://childrenshealthdefense.org/defender/thousands-covid-vaccine-injuries-13-deaths-reported-december/">adverse events</a> is likely significantly higher. VAERS is a <a href="https://vaers.hhs.gov/about.html">passive surveillance system</a> that relies on the willingness of individuals to submit reports voluntarily.  From the study:</p>
+<p>"Adverse events from drugs and vaccines are common, but underreported. Although 25% of ambulatory patients experience an adverse drug event, less than 0.3% of all adverse drug events and 1-13% of serious events are reported to the Food and Drug Administration (FDA). Likewise, fewer than 1% of vaccine adverse events are reported."</p>
+<p>I am interested in the risk of death from the vaccine, for this the relevant figure is the number of people vaccinated, which on April 14 2021 is 123.92 million.</p>
+<pre><code>VAERS risk of death = no vaccinated / (deaths * under reporting factor)
+= 123920000 / (3005 * 100)
+= 1 in 412
+</code></pre>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/mrp6y5/_/gupbd08">permalink</a>
+        </p>
+        <div class="comment" id="t1_guq9dgi">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/timtoppers">timtoppers</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Apr 16 2021 14:40:21</span>
+    </p>
+    <div class="collapsible">
+        <p>Where did you even get that under reporting factor, 100 is an insane number to use</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/mrp6y5/_/guq9dgi">permalink</a>
+        </p>
+        <div class="comment" id="t1_gusas28">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/loopfission">loopfission</a>
+        <span class="score"> | 6 points</span>
+        <span class="timestamp"> | Apr 17 2021 00:03:38</span>
+    </p>
+    <div class="collapsible">
+        <p>For VAERS "fewer than 1% of vaccine adverse events are reported" is an under reporting factor of 100.  There is <a href="https://www.reddit.com/r/DebateVaccines/comments/mrelyv/new_study_confirms_the_vaers_system_is_only/">another recent analysis of under reporting in VAERS</a>.</p>
+<p>Since there is under reporting in VAERS, I chose to analyze the European data.  In the screenshots for Pfizer and Moderna, there are usually more reports for healthcare professionals than non healthcare professionals.  Which makes me suspect there is under reporting of adverse reactions for non healthcare professionals.</p>
+<p>To obtain a better estimate of the risks, I have chosen to analyse the risks for healthcare professionals, where I have assumed that all adverse events were reported.</p>
+<p>I have provided all of the screenshots, from which I entered all of the data into tables, and provided all of the formulas.  Anyone can check this analysis.  I have not used any under reporting factor in the analysis of the adverse reaction reports for European healthcare professionals (which is equivalent to using an under reporting factor of 1 in 1 gets reported).</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/mrp6y5/_/gusas28">permalink</a>
+        </p>
+        <div class="comment" id="t1_gw37g03">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/BigBodiJohni">BigBodiJohni</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Apr 27 2021 19:46:49</span>
+    </p>
+    <div class="collapsible">
+        <p>&rt;    For VAERS "fewer than 1% of vaccine adverse events are reported" is an under reporting factor of 100.</p>
+<p>That’s not an under reporting factor of 100, though. An under reporting factor of 100 would indicate that 100% of the total instances of “adverse side effects” were all threatening enough to warrant reporting. The truth is that of the 100% group, only 1% warranted reporting because the severity or nature of the complication, and included in this 1% are the instances of death, allergic reactions, or amplified comorbidities. The other 99% of adverse reactions include the people who had normal (non threatening) “adverse side effects.” I had a sore arm and a headache for two hours, but I’m not going to go out of my way and report it. If I got a big ass rash and my teeth started falling out, I’d 100% be reporting that.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/mrp6y5/_/gw37g03">permalink</a>
+        </p>
+        <div class="comment" id="t1_gw3lm9f">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Terriblegrammar3000">Terriblegrammar3000</a>
+        <span class="score"> | 0 points</span>
+        <span class="timestamp"> | Apr 27 2021 21:29:34</span>
+    </p>
+    <div class="collapsible">
+        <p>Let them live in fear. They refuse to acknowledge facts, and when they for once use correct numbers, they add some wrong ones as well. How delusional are you if you think all deaths close to the vaccine aren't reported, so you multiply with 100 just to be sure.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/mrp6y5/_/gw3lm9f">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

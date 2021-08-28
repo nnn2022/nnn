@@ -1,0 +1,96 @@
+<html>
+<head>
+<title>Things are looking up!</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.comment
+{
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border: 2px #000 solid;
+}
+.submission
+{
+    border: 4px #00f solid;
+    padding-left: 20px;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_lsn6nt">
+    <p class="userinfo">
+        <a href="https://www.reddit.com/u/stevecho1">stevecho1</a>
+        <span class="score"> | 7 points</span>
+        <span class="timestamp"> | Feb 26 2021 02:08:02</span>
+    </p>
+    <strong>Things are looking up!</strong>
+    <p><a href="https://www.cnn.com/2021/02/25/politics/republican-legislation-elections-powers/index.html">https://www.cnn.com/2021/02/25/politics/republican-legislation-elections-powers/index.html</a></p>
+    <p class="toolbar">
+        <a href="https://www.reddit.com/r/NoNewNormal/comments/lsn6nt">permalink</a>
+    </p>
+</div>
+<div class="comment" id="t1_gos8mg3">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/auteur555">auteur555</a>
+        <span class="score"> | 17 points</span>
+        <span class="timestamp"> | Feb 26 2021 02:21:17</span>
+    </p>
+    <div class="collapsible">
+        <p>Can someone summarize. I’d rather stick a fork in my ear then click on a CNN article</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lsn6nt/_/gos8mg3">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gos7gm8">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Harryisamazing">Harryisamazing</a>
+        <span class="score"> | 5 points</span>
+        <span class="timestamp"> | Feb 26 2021 02:11:27</span>
+    </p>
+    <div class="collapsible">
+        <p>This sounds so promising, I sure as hell hope this includes California!</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lsn6nt/_/gos7gm8">permalink</a>
+        </p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

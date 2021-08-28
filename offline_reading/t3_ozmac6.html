@@ -1,0 +1,96 @@
+<html>
+<head>
+<title>test only</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.comment
+{
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border: 2px #000 solid;
+}
+.submission
+{
+    border: 4px #00f solid;
+    padding-left: 20px;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_ozmac6">
+    <p class="userinfo">
+        <a href="https://www.reddit.com/u/antiqcod">antiqcod</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Aug 07 2021 04:03:11</span>
+    </p>
+    <strong>test only</strong>
+    <p><a href="https://i.redd.it/qecarmvy0vf71.jpg">https://i.redd.it/qecarmvy0vf71.jpg</a></p>
+    <p class="toolbar">
+        <a href="https://www.reddit.com/r/NoNewNormal/comments/ozmac6">permalink</a>
+    </p>
+</div>
+<div class="comment" id="t1_h80p5yn">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/TXJOEMAMA">TXJOEMAMA</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Aug 07 2021 04:04:30</span>
+    </p>
+    <div class="collapsible">
+        <p>Tapping into my falling asleep theme...lol.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/ozmac6/_/h80p5yn">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_h80q3im">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/SohndesRheins">SohndesRheins</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Aug 07 2021 04:13:46</span>
+    </p>
+    <div class="collapsible">
+        <p>Silent weapons for quiet wars</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/ozmac6/_/h80q3im">permalink</a>
+        </p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

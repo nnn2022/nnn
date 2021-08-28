@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>Could upvote the two outer comments but failed to upvote the middle.</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.comment
+{
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border: 2px #000 solid;
+}
+.submission
+{
+    border: 4px #00f solid;
+    padding-left: 20px;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_ohx0ot">
+    <p class="userinfo">
+        <a href="https://www.reddit.com/u/dkdrew57">dkdrew57</a>
+        <span class="score"> | 0 points</span>
+        <span class="timestamp"> | Jul 11 2021 03:32:36</span>
+    </p>
+    <strong>Could upvote the two outer comments but failed to upvote the middle.</strong>
+    <p><a href="https://i.redd.it/zn2lakn17ia71.jpg">https://i.redd.it/zn2lakn17ia71.jpg</a></p>
+    <p class="toolbar">
+        <a href="https://www.reddit.com/r/NoNewNormal/comments/ohx0ot">permalink</a>
+    </p>
+</div>
+<div class="comment" id="t1_h4rudz4">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/TheBranchCovidian">TheBranchCovidian</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Jul 11 2021 03:40:18</span>
+    </p>
+    <div class="collapsible">
+        <p>Probably got removed from the time you clicked the post to upvoting the comment. Happens all the time, nothing more nefarious than deleting the comment to begin with</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/ohx0ot/_/h4rudz4">permalink</a>
+        </p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

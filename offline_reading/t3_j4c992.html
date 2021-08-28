@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>gottle u geer</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.comment
+{
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border: 2px #000 solid;
+}
+.submission
+{
+    border: 4px #00f solid;
+    padding-left: 20px;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_j4c992">
+    <p class="userinfo">
+        <a href="https://www.reddit.com/u/oldtimerUK">oldtimerUK</a>
+        <span class="score"> | 54 points</span>
+        <span class="timestamp"> | Oct 03 2020 08:25:35</span>
+    </p>
+    <strong>gottle u geer</strong>
+    <p><a href="https://i.redd.it/86q1fi8gauq51.png">https://i.redd.it/86q1fi8gauq51.png</a></p>
+    <p class="toolbar">
+        <a href="https://www.reddit.com/r/NoNewNormal/comments/j4c992">permalink</a>
+    </p>
+</div>
+<div class="comment" id="t1_g7iyfze">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/justinvan82">justinvan82</a>
+        <span class="score"> | 6 points</span>
+        <span class="timestamp"> | Oct 03 2020 16:28:26</span>
+    </p>
+    <div class="collapsible">
+        <p>Works for Canada too.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/j4c992/_/g7iyfze">permalink</a>
+        </p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

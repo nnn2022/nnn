@@ -1,0 +1,96 @@
+<html>
+<head>
+<title>This is a safe space</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.comment
+{
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border: 2px #000 solid;
+}
+.submission
+{
+    border: 4px #00f solid;
+    padding-left: 20px;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_lol5o9">
+    <p class="userinfo">
+        <a href="https://www.reddit.com/u/hypurion">hypurion</a>
+        <span class="score"> | 9 points</span>
+        <span class="timestamp"> | Feb 21 2021 00:50:38</span>
+    </p>
+    <strong>This is a safe space</strong>
+    <p><a href="https://i.redd.it/8lnjin6jaqi61.jpg">https://i.redd.it/8lnjin6jaqi61.jpg</a></p>
+    <p class="toolbar">
+        <a href="https://www.reddit.com/r/NoNewNormal/comments/lol5o9">permalink</a>
+    </p>
+</div>
+<div class="comment" id="t1_go6ty5f">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/H8theSteelers">H8theSteelers</a>
+        <span class="score"> | 11 points</span>
+        <span class="timestamp"> | Feb 21 2021 03:23:11</span>
+    </p>
+    <div class="collapsible">
+        <p>Just remember - you cant get Covid if you dont ever take a Covid test</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lol5o9/_/go6ty5f">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_go7anb7">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/JetpackZombie777">JetpackZombie777</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Feb 21 2021 06:19:44</span>
+    </p>
+    <div class="collapsible">
+        <p>Good thing Covid isn't deadly or this guy could've actually caused some damage</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lol5o9/_/go7anb7">permalink</a>
+        </p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

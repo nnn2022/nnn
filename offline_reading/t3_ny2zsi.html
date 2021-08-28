@@ -1,0 +1,76 @@
+<html>
+<head>
+<title>My first ever Subreddit ban :)</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.comment
+{
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border: 2px #000 solid;
+}
+.submission
+{
+    border: 4px #00f solid;
+    padding-left: 20px;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_ny2zsi">
+    <p class="userinfo">
+        <a href="https://www.reddit.com/u/AskyReddit">AskyReddit</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Jun 12 2021 09:36:28</span>
+    </p>
+    <strong>My first ever Subreddit ban :)</strong>
+    <p><a href="https://imgur.com/AqYVlhR.jpg">https://imgur.com/AqYVlhR.jpg</a></p>
+    <p class="toolbar">
+        <a href="https://www.reddit.com/r/NoNewNormal/comments/ny2zsi">permalink</a>
+    </p>
+</div>
+<div class="comment" id="t1_h1i12lj">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/AskyReddit">AskyReddit</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Jun 12 2021 09:37:32</span>
+    </p>
+    <div class="collapsible">
+        <p>Guys there's been ZERO deaths as a result of the vaccine . . Not 20,000 not 5000 as VAERS suggests. THE ANSWER IS ZERO.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/ny2zsi/_/h1i12lj">permalink</a>
+        </p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

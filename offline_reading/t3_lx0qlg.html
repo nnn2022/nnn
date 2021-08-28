@@ -1,0 +1,3018 @@
+<html>
+<head>
+<title>Why you should care about NOT having a vaccine passport</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.comment
+{
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border: 2px #000 solid;
+}
+.submission
+{
+    border: 4px #00f solid;
+    padding-left: 20px;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_lx0qlg">
+    <p class="userinfo">
+        [deleted]
+        <span class="score"> | 560 points</span>
+        <span class="timestamp"> | Mar 03 2021 18:26:07</span>
+    </p>
+    <strong>Why you should care about NOT having a vaccine passport</strong>
+    <p><p>I'm a computer engineer and have always closely followed privacy issues, and the vaccination passport is a very scary prospect for our privacy and freedom, maybe in more ways than you would think on the surface. I have been seeing some misconceptions in comments about ways to cheat the system, but they are way ahead of you on those. Unfortunately it is something that was probably going to happen someday regardless of a virus or not, particularly after the Chinese implemented <a href="https://en.wikipedia.org/wiki/Social_Credit_System">social credit</a>. The vaccine is used just as an excuse at this point. Personally I wouldn't even mind the later after waiting some time for long-term data, but the tracking that comes with a passport is unacceptable, and that is what we should be fighting.</p>
+<p>Something I think should be clear is that there are two different, separate issues here, and they are both valid. The first is not wanting to take the vaccine. This is a valid standpoint, but basically solely an ethics question and a separate debate. The second is not wanting to present identification when entering all/a lot/some businesses, and this is the one I will talk about. The media/politicians will try to lump both together, but they are very distinct issues.</p>
+<p>Technically the only thing you need to know is that you will have a bar code/QR code/ID number (doesn't even matter if it's on your phone or on a paper), and the place that you are entering has a digital scanner (a human checking papers is too easy to fool (and slow), so they are way ahead on that. To be able to admit you, your code has to be checked against a server-stored token, to prove your passport is legitimate. Whenever a request is performed against the server, it follows a log will be produced of that identification request. Something like <strong>"Mr John Smith, at Walmart SW LA, 03/03/2021, 3:15pm, does he have a vaccine/negative test/etc.?"</strong>, to which the server replies <strong>"yes/no"</strong>.</p>
+<p>Now all kinds of web servers produce some sort of log, maliciously or not, but you will never be able to tell whether the system you are using does it or not. And given that a chain of web servers interact with each other on modern architectures, and logging is a default on modern (or old for that matter) programs, it's a given someone will do it. My objective with this post is to clear some confusion around what you could do to cheat the system, or to counter some arguments software agencies and health officials have been propagating. I'm not targeting any system in particular, but I'm attacking the system architecture that is being proposed, using the arguments I would use if someone pitched me a new system and I played the devil's advocate.</p>
+<p>So looking at some of the misconceptions/workarounds I have seen:</p>
+<ul>
+<li>
+<p>"I'll use a paper one": Irrelevant. As long as the code is read by a machine, that machine will have to consult a server, to where your ID is sent. This is not a "disable your location services" kind of system, the tracking is done by the scanning party. No scanner? Maybe the clerk just types a number on his phone, same thing from a privacy standpoint, your ID is sent somewhere out of your control. Given that the trend is to replace human agents with machines (ticket control, store assistants, etc) I hardly believe we will see a new human-based job appearing. It will be like scanning your ticket at the train station.</p>
+</li>
+<li>
+<p>"I'll get a fake passport": Could work only if the store/gate agent/whatever didn't have a digital scanner, and only looked at papers (knowing that this is cumbersome, and they know there will be cheaters, this will not be the case). If the verification is done on the server side nothing short of hacking that server would help you, and even then your "life log" could have already been backed up somewhere. "Things on the internet last forever" is true, in the sense that even if you delete something, you have no way of knowing if someone has saved a copy.</p>
+</li>
+<li>
+<p>"I'll share my passport with my friends to confuse them": The owner's photo might be stored on their server, and that will appear on their scanner, thus showing you are not the owner to a nearby agent/AI face recognition system (<a href="https://en.wikipedia.org/wiki/Facial_recognition_system">not sci-fi</a>, and at this point in time, the system could evolve into being just a camera on their end that could check you are indeed vaccinated and hence track you, no need to even have a paper).</p>
+</li>
+<li>
+<p>"I'll get my doctor friend to forge an exemption": Sure, you can escape the vaccine, but you still have to present your "exempt" passport, hence you are tracked just as anyone else. Same logic for negative tests, or for someone who was already infected. You are still an ID being associated with places. Should the purpose of the system be to track you, then it doesn't matter whether you have a vaccine or not, just that you comply with mandatory identification.</p>
+</li>
+<li>
+<p>"The scanner does not contact any server, my QR code has a verifiable signed token that the scanner reads locally": Theoretically fine, but how can you be sure the scanner does what the government/ID provider tells you it does? Maybe it just stores your credentials locally for in-store tracking (the same way a store card would), but do you want that to be legally mandated? Maybe it shares them with some related companies for marketing. The point is if you do not know what the other party is doing, you do not participate. The best way for your nudes not to leak on the internet is not sharing them in the first place.</p>
+</li>
+<li>
+<p>"The passport does not have my name associated": You know bitcoin? It's paraded as the private currency. It's not controlled by any government. Yet, <a href="https://www.newsbtc.com/news/bitcoin/authorities-track-bitcoin-transactions-dark-web-drug-dealer-arrested/">the police has been able to arrest people</a> by using <a href="https://en.wikipedia.org/wiki/Inference_attack">inference attacks</a>. These sort of attacks are very powerful, it is detective work but on a digital scale. Maybe to the passport you are just "John Doe", but you are the John Doe that checks-in every day to workplace X, that goes every week to Starbucks Y at a small town, that goes every month to state Z. It's not hard for law enforcement to then go around and find out who you are if they know your routine. You have nothing to hide? Until you are in the wrong place at the wrong time again.</p>
+</li>
+<li>
+<p>"The government would not do such a thing, they care only about health": Lets suppose it is so. There is still a system that is capable of logging your whereabouts. And no system in the world is perfectly safe. Lets say it gets hacked. Now your life data is somewhere on the dark web being sold to the highest bidder. Maybe some house thiefs noticed that today you checked-in at a shop 1000 miles away from your workplace. The data is anonymized? Lets go back to the inference attacks. If the police is able to do it, so are hackers. And a database of life itself surely is a prime target for attacks.</p>
+</li>
+<li>
+<p>"I really trust my friend's hacking skills": No system is perfect, so hacking it will be possible. But it's only a matter of time until your exploit gets fixed, so it will always be a game of cat and mouse. It's much easier for data to be stolen from the server as in the point above, since that attack only needs temporary access to the server.</p>
+</li>
+<li>
+<p>"We are already tracked everywhere": Sure. Visa tracks you. Mastercard as well. Facebook. Google. Your phone provider. But each has their own system. The police can request data from each one of them, which is a bureaucratic process. Banking in particular has old systems. And it's not all put together neatly in a system built from the ground up, where a simple query can show everything a given person has done throughout his life. And all of the former are opt-in too.</p>
+</li>
+<li>
+<p>"Vaccination passports already exist": Come on, you are really telling me you have always shown a vaccination passport to buy groceries, to go to the cinema or for interstate travel? Might have been so to go to 4 or 5 African countries, nothing more.</p>
+</li>
+<li>
+<p>"I have nothing to hide": Until whatever you did that was legal and allowed is not anymore. Royalty and even landowners in general had nothing to hide in Russia until 1917. Plus you could be at the wrong place at the wrong time and be accused of something you did not do. Maybe you checked in to to a restaurant and a supermarket the same day as a suspect, and the police wrongly put 2 and 2 together. And if they tell you it is private, <a href="https://www.bbc.com/news/world-asia-55541001">it's a matter of time until someone decides it is not</a>.</p>
+</li>
+</ul>
+<p>It's still soon to know implementations of the passport, and how often or where it will be used (international travel vs buying groceries). But knowing how a system is designed, and regardless of the "privacy level" they are parading, there will always be a lot of flaws on the concept itself. And forcing people to abdicate their privacy in every aspect of daily life, for whatever reason, is just appalling and downright unethical.</p>
+<p>We need to shift the focus away from this being about the vaccine, and focusing on it being about tracking. Could have happened just as well after 9/11 if the tech was there. I know most people will cave in when they are told that they will not get a job without the passport, or won't be able to buy food. Unless we are aware of the ramifications of such a system, and go outside to protest or boycott it. Because once it's accepted it is not going anywhere. And remember, a vaccination tracking system is, first of all, a tracking system.</p></p>
+    <p class="toolbar">
+        <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg">permalink</a>
+    </p>
+</div>
+<div class="comment" id="t1_gpl4w9w">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/LFGM69420">LFGM69420</a>
+        <span class="score"> | 205 points</span>
+        <span class="timestamp"> | Mar 03 2021 22:24:52</span>
+    </p>
+    <div class="collapsible">
+        <p>Need a "vaccine passport" to have a life. </p>
+<p>No ID necessary to vote.</p>
+<p>Clown world.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpl4w9w">permalink</a>
+        </p>
+        <div class="comment" id="t1_gplf9wm">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Vladimir-KG">Vladimir-KG</a>
+        <span class="score"> | 33 points</span>
+        <span class="timestamp"> | Mar 03 2021 23:49:17</span>
+    </p>
+    <div class="collapsible">
+        <p>Completely.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gplf9wm">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gpmci30">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/granville10">granville10</a>
+        <span class="score"> | 30 points</span>
+        <span class="timestamp"> | Mar 04 2021 04:47:16</span>
+    </p>
+    <div class="collapsible">
+        <p>Well at least Joe Biden is consistent on the subject. He thinks black people are incapable of accessing the internet to find out how to get vaccinated. Just like he thinks they can’t find the DMV.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpmci30">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_gpkux2r">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/SufficientTower">SufficientTower</a>
+        <span class="score"> | 106 points</span>
+        <span class="timestamp"> | Mar 03 2021 21:11:02</span>
+    </p>
+    <div class="collapsible">
+        <p>And that no man might buy or sell, save he that had the mark, or the name of the beast, or the number of his name.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpkux2r">permalink</a>
+        </p>
+        <div class="comment" id="t1_gpm5w9z">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/X16aBmfX4Pr7PAKqyBIU">X16aBmfX4Pr7PAKqyBIU</a>
+        <span class="score"> | 38 points</span>
+        <span class="timestamp"> | Mar 04 2021 03:43:37</span>
+    </p>
+    <div class="collapsible">
+        <p>This is what's scaring me the most, even though I'm not really religious. It's super obvious that vaccine passports are being pushed through for very little practical reason.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpm5w9z">permalink</a>
+        </p>
+        <div class="comment" id="t1_gpmkd4l">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/geo-desik">geo-desik</a>
+        <span class="score"> | 19 points</span>
+        <span class="timestamp"> | Mar 04 2021 06:17:02</span>
+    </p>
+    <div class="collapsible">
+        <p>The fear of God is the beginning of wisdom..</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpmkd4l">permalink</a>
+        </p>
+        <div class="comment" id="t1_gqq40wc">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Killpower78">Killpower78</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Mar 12 2021 19:48:10</span>
+    </p>
+    <div class="collapsible">
+        <p>Is that right mate, How long before we start up new crusades, Spanish Inquisitions? Etc this is an dangerous trend.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gqq40wc">permalink</a>
+        </p>
+        <div class="comment" id="t1_gqq7anl">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/geo-desik">geo-desik</a>
+        <span class="score"> | 9 points</span>
+        <span class="timestamp"> | Mar 12 2021 20:13:37</span>
+    </p>
+    <div class="collapsible">
+        <p>Well if you feared God you wouldn't murder... I'm not saying ppl haven't done that in his name but they definitely weren't justified in doing so</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gqq7anl">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_gplgdb1">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/01johnnycomelately10">01johnnycomelately10</a>
+        <span class="score"> | 22 points</span>
+        <span class="timestamp"> | Mar 03 2021 23:58:43</span>
+    </p>
+    <div class="collapsible">
+        <p>Bingo. My thoughts exactly.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gplgdb1">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_gpk9ljc">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/JpowYellen3some">JpowYellen3some</a>
+        <span class="score"> | 100 points</span>
+        <span class="timestamp"> | Mar 03 2021 18:37:22</span>
+    </p>
+    <div class="collapsible">
+        <p>Get ready to live outside the system man. I’ve already resigned myself to never being able to travel outside of my country. </p>
+<p>But thank God in this life I was born in a giant land with beautiful nature so maybe I can work with that 🤷‍♂️</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpk9ljc">permalink</a>
+        </p>
+        <div class="comment" id="t1_gpkeq0j">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/abednadir86755">abednadir86755</a>
+        <span class="score"> | 62 points</span>
+        <span class="timestamp"> | Mar 03 2021 19:14:38</span>
+    </p>
+    <div class="collapsible">
+        <p>&rt; I’ve already resigned myself to never being able to travel outside of my country.</p>
+<p>You honestly think that it'll end there?</p>
+<p>Eventually, they'll probably disallow inter-state travel, maybe even travel outside of cities. You'll need to scan your health passport at what were once toll booths or other stations they set up. Maybe military checkpoints as was stated in the Canadian government leaks.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpkeq0j">permalink</a>
+        </p>
+        <div class="comment" id="t1_gpkiayg">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/KlausBleibtZuhaus">KlausBleibtZuhaus</a>
+        <span class="score"> | 31 points</span>
+        <span class="timestamp"> | Mar 03 2021 19:40:05</span>
+    </p>
+    <div class="collapsible">
+        <p>I germany they are already talking about allowing people to only travel to the beaches inside the country with a vaccination.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpkiayg">permalink</a>
+        </p>
+        <div class="comment" id="t1_gpljmxi">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/elim_garak_89">elim_garak_89</a>
+        <span class="score"> | 4 points</span>
+        <span class="timestamp"> | Mar 04 2021 00:27:15</span>
+    </p>
+    <div class="collapsible">
+        <p>I can't see how they plan to do that.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpljmxi">permalink</a>
+        </p>
+        <div class="comment" id="t1_gpmva2o">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Goreagnome">Goreagnome</a>
+        <span class="score"> | 11 points</span>
+        <span class="timestamp"> | Mar 04 2021 08:56:22</span>
+    </p>
+    <div class="collapsible">
+        <p>&rt;I can't see how they plan to do that.</p>
+<p>-Germans during 1933</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpmva2o">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_gpl610w">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/pronghorn97">pronghorn97</a>
+        <span class="score"> | 28 points</span>
+        <span class="timestamp"> | Mar 03 2021 22:33:44</span>
+    </p>
+    <div class="collapsible">
+        <p>Part of Agenda 30 is to "preserve nature" - what this means is coralling everyone into cities, and eliminating rural communities.  Huge swaths of wilderness will be cut off from access to regular people. (if they get their way)</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpl610w">permalink</a>
+        </p>
+        <div class="comment" id="t1_gplaxlt">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/JpowYellen3some">JpowYellen3some</a>
+        <span class="score"> | 12 points</span>
+        <span class="timestamp"> | Mar 03 2021 23:12:58</span>
+    </p>
+    <div class="collapsible">
+        <p>Yeah they can TRY lol In the end you will choose to go yourself as they require consent. </p>
+<p>Start learning to grow food so you don’t have to due to no fault of the government.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gplaxlt">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gplbbv6">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/baudmonkey">baudmonkey</a>
+        <span class="score"> | 8 points</span>
+        <span class="timestamp"> | Mar 03 2021 23:16:16</span>
+    </p>
+    <div class="collapsible">
+        <p>Wasn't that a thing in the film Soylent Green? Where people were forbidden from leaving cities? I may be imagining that.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gplbbv6">permalink</a>
+        </p>
+        <div class="comment" id="t1_gpldf88">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/pronghorn97">pronghorn97</a>
+        <span class="score"> | 21 points</span>
+        <span class="timestamp"> | Mar 03 2021 23:33:36</span>
+    </p>
+    <div class="collapsible">
+        <p>I think it's like that in Brave New World.  Everyone outside the megacities are "savages."  But you're not really allowed to go there.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpldf88">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_gpkjok0">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/JpowYellen3some">JpowYellen3some</a>
+        <span class="score"> | -7 points</span>
+        <span class="timestamp"> | Mar 03 2021 19:49:59</span>
+    </p>
+    <div class="collapsible">
+        <p>There are legal and lawful remedies for that. I’m not afraid of my government.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpkjok0">permalink</a>
+        </p>
+        <div class="comment" id="t1_gpkwnw4">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/4wheelin4christ">4wheelin4christ</a>
+        <span class="score"> | 22 points</span>
+        <span class="timestamp"> | Mar 03 2021 21:23:44</span>
+    </p>
+    <div class="collapsible">
+        <p>You should be.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpkwnw4">permalink</a>
+        </p>
+        <div class="comment" id="t1_gpl9nua">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/infiniutube">infiniutube</a>
+        <span class="score"> | 11 points</span>
+        <span class="timestamp"> | Mar 03 2021 23:02:33</span>
+    </p>
+    <div class="collapsible">
+        <p>You don't need to be. Make a line, don't let them cross it.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpl9nua">permalink</a>
+        </p>
+        <div class="comment" id="t1_gpl9sd2">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/4wheelin4christ">4wheelin4christ</a>
+        <span class="score"> | 6 points</span>
+        <span class="timestamp"> | Mar 03 2021 23:03:34</span>
+    </p>
+    <div class="collapsible">
+        <p>I can't even be bothered I am just trying to not die for a little while.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpl9sd2">permalink</a>
+        </p>
+        <div class="comment" id="t1_gpl9x9i">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/infiniutube">infiniutube</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Mar 03 2021 23:04:40</span>
+    </p>
+    <div class="collapsible">
+        <p>Lol fair.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpl9x9i">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gplazbd">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/JpowYellen3some">JpowYellen3some</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Mar 03 2021 23:13:22</span>
+    </p>
+    <div class="collapsible">
+        <p>Username does not check out</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gplazbd">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_gpm6tgg">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Bond4141">Bond4141</a>
+        <span class="score"> | 6 points</span>
+        <span class="timestamp"> | Mar 04 2021 03:52:12</span>
+    </p>
+    <div class="collapsible">
+        <p>Hard to enforce a drawn line when you gave up your right to bear arms</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpm6tgg">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_gpl96nz">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/JpowYellen3some">JpowYellen3some</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Mar 03 2021 22:58:41</span>
+    </p>
+    <div class="collapsible">
+        <p>Nah. We are way more powerful man.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpl96nz">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_gpkuppl">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/AdministrativeRush11">AdministrativeRush11</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Mar 03 2021 21:09:32</span>
+    </p>
+    <div class="collapsible">
+        <p>LOL.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpkuppl">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_gpkf71v">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/SanJustSan">SanJustSan</a>
+        <span class="score"> | 38 points</span>
+        <span class="timestamp"> | Mar 03 2021 19:18:02</span>
+    </p>
+    <div class="collapsible">
+        <p>I'm in the USSB (Union of Soviet Socialist Britain). Send help.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpkf71v">permalink</a>
+        </p>
+        <div class="comment" id="t1_gpkq19h">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/godca_grema">godca_grema</a>
+        <span class="score"> | 22 points</span>
+        <span class="timestamp"> | Mar 03 2021 20:36:05</span>
+    </p>
+    <div class="collapsible">
+        <p>Trapped on an overcrowded island that's getting fuller by the day. At this rate, I'll be getting a dinghy and claiming asylum in Monaco, wish me luck.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpkq19h">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gpl9jwo">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/hblok">hblok</a>
+        <span class="score"> | 10 points</span>
+        <span class="timestamp"> | Mar 03 2021 23:01:38</span>
+    </p>
+    <div class="collapsible">
+        <p>Last I visited, which was about 2017, you had to show a passport or other ID which was scanned at the door in order to get into night clubs.</p>
+<p>Nothing beats arguing with a two-bit bouncer about why that is unacceptable.</p>
+<p>We didn't enter the club.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpl9jwo">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gpkkqim">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/jonny-reddit">jonny-reddit</a>
+        <span class="score"> | 9 points</span>
+        <span class="timestamp"> | Mar 03 2021 19:57:33</span>
+    </p>
+    <div class="collapsible">
+        <p>Oi let me see your moanin loicance you kant</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpkkqim">permalink</a>
+        </p>
+        <div class="comment" id="t1_gpl9vig">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/infiniutube">infiniutube</a>
+        <span class="score"> | 6 points</span>
+        <span class="timestamp"> | Mar 03 2021 23:04:16</span>
+    </p>
+    <div class="collapsible">
+        <p>Ye got 'er loicense fer dat der loicense?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpl9vig">permalink</a>
+        </p>
+        <div class="comment" id="t1_gplhd9g">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/jonny-reddit">jonny-reddit</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Mar 04 2021 00:07:26</span>
+    </p>
+    <div class="collapsible">
+        <p>Mate he's not Irish lol</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gplhd9g">permalink</a>
+        </p>
+        <div class="comment" id="t1_gpli3fc">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/infiniutube">infiniutube</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Mar 04 2021 00:13:49</span>
+    </p>
+    <div class="collapsible">
+        <p>NO LOICENSE TO SPEAK MATE!</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpli3fc">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_gpldkf9">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/sucksforyou05">sucksforyou05</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Mar 03 2021 23:34:49</span>
+    </p>
+    <div class="collapsible">
+        <p>Oi you cunt .... My fucking favorite. I love the Brits and Aussies.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpldkf9">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_gpljtdr">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        <span class="score"> | 8 points</span>
+        <span class="timestamp"> | Mar 04 2021 00:28:49</span>
+    </p>
+    <div class="collapsible">
+        <p>[deleted]</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpljtdr">permalink</a>
+        </p>
+        <div class="comment" id="t1_gpmbbq5">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/TheCookie_Momster">TheCookie_Momster</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Mar 04 2021 04:35:15</span>
+    </p>
+    <div class="collapsible">
+        <p>Send me a note when you find such a place. Somewhere safe, without government overreach, and preferably warm.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpmbbq5">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_gpkjq05">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/JpowYellen3some">JpowYellen3some</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Mar 03 2021 19:50:17</span>
+    </p>
+    <div class="collapsible">
+        <p>Learn some law and remedies my friend</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpkjq05">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_gpkjcg4">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/HotRabbit999">HotRabbit999</a>
+        <span class="score"> | 31 points</span>
+        <span class="timestamp"> | Mar 03 2021 19:47:33</span>
+    </p>
+    <div class="collapsible">
+        <p>Yep, will probably not be able to go visit my family in the UK ever again but thank God I'm in Texas - land of the free and armed to the teeth (not me - I'm a resident alien - no gun for me).</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpkjcg4">permalink</a>
+        </p>
+        <div class="comment" id="t1_gpkoucs">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/StrigoiVii">StrigoiVii</a>
+        <span class="score"> | 25 points</span>
+        <span class="timestamp"> | Mar 03 2021 20:27:29</span>
+    </p>
+    <div class="collapsible">
+        <p>Permanent residents can legally own guns my dude. I do.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpkoucs">permalink</a>
+        </p>
+        <div class="comment" id="t1_gpkpg5w">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/HotRabbit999">HotRabbit999</a>
+        <span class="score"> | 12 points</span>
+        <span class="timestamp"> | Mar 03 2021 20:31:53</span>
+    </p>
+    <div class="collapsible">
+        <p>I...did not know that. TIL.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpkpg5w">permalink</a>
+        </p>
+        <div class="comment" id="t1_gpkq6ij">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/StrigoiVii">StrigoiVii</a>
+        <span class="score"> | 22 points</span>
+        <span class="timestamp"> | Mar 03 2021 20:37:11</span>
+    </p>
+    <div class="collapsible">
+        <p>Use your coronabux to get into the hobby. :)</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpkq6ij">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_gpky5v9">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/crayon_extremist">crayon_extremist</a>
+        <span class="score"> | 31 points</span>
+        <span class="timestamp"> | Mar 03 2021 21:34:39</span>
+    </p>
+    <div class="collapsible">
+        <p>There will eventually be checkpoints. If you are not in compliance you are a white nationalist(regardless of your race) then you are detained and will probably go to prison.  This is how they will get dissidents opposed to their great reset. The writing is on the wall at this point. Eventually a few brave souls rebel( they will be called terrorists) just listen to the fbi director about domestic terrorists. The global elite are using this virus for their endgame. Serfdom and slavery for the sheep and death and imprisonment for us. Some of us will fight and hide. This is a huge country with vast spaces. But be prepared to be labeled a terrorist and criminal with all that entails.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpky5v9">permalink</a>
+        </p>
+        <div class="comment" id="t1_gpl9idm">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/JpowYellen3some">JpowYellen3some</a>
+        <span class="score"> | 26 points</span>
+        <span class="timestamp"> | Mar 03 2021 23:01:18</span>
+    </p>
+    <div class="collapsible">
+        <p>Guy stop listening to doomer truther channels. My buddy just flew back from Mexico and declined the quarantine and mask at Pearson in Toronto of all places. </p>
+<p>It’s been a week and no one has come to check on him. </p>
+<p>In the end power is a shadow/theatre, and we give it up through our consent. </p>
+<p>You’re addicted to cortisol. Turn off the tv/YouTube and just go for a walk, think about the skills you have that you can use to build a homestead and community with. </p>
+<p>The world is and was always fucked.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpl9idm">permalink</a>
+        </p>
+        <div class="comment" id="t1_gplc0cy">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Jerryolay">Jerryolay</a>
+        <span class="score"> | 15 points</span>
+        <span class="timestamp"> | Mar 03 2021 23:21:54</span>
+    </p>
+    <div class="collapsible">
+        <p>This. Non-compliance is key. Very few people are actually going to follow up if you put your foot down and say no. At least that has been my experience flouting the rules for the last 5 months and I'm in Melbourne, Australia's doomer land.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gplc0cy">permalink</a>
+        </p>
+        <div class="comment" id="t1_gplcny7">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/JpowYellen3some">JpowYellen3some</a>
+        <span class="score"> | 7 points</span>
+        <span class="timestamp"> | Mar 03 2021 23:27:20</span>
+    </p>
+    <div class="collapsible">
+        <p>Your fellow countryman Tom Barnett has been a Godsend!</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gplcny7">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_gpla0o8">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/JpowYellen3some">JpowYellen3some</a>
+        <span class="score"> | 6 points</span>
+        <span class="timestamp"> | Mar 03 2021 23:05:26</span>
+    </p>
+    <div class="collapsible">
+        <p>Oh and there were supposed to be checkpoints in Quebec and Northern Ontario. Didn’t really see one except for on the news 😂</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpla0o8">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_gplbr0i">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/cycloneous">cycloneous</a>
+        <span class="score"> | 9 points</span>
+        <span class="timestamp"> | Mar 03 2021 23:19:48</span>
+    </p>
+    <div class="collapsible">
+        <p>&rt;  I’ve already resigned myself to never being able to travel outside of my country. </p>
+<p>I am of the same opinion. I was planning to visit one of my favorite cultures, Ireland and have an Irish beer (I don't drink). Now with this passport nonsense, those dreams have been dashed, and it looks like that trip will never happen.</p>
+<p>Like you said, here in America, the land is big enough to visit each of the different regions to experience its' local culture. In the end? It is their loss, not mine!</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gplbr0i">permalink</a>
+        </p>
+        <div class="comment" id="t1_gsjtsye">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/TemptedIntoSin">TemptedIntoSin</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Mar 28 2021 04:24:42</span>
+    </p>
+    <div class="collapsible">
+        <p>&rt;I am of the same opinion. I was planning to visit one of my favorite cultures, Ireland and have an Irish beer (I don't drink). Now with this passport nonsense, those dreams have been dashed, and it looks like that trip will never happen.</p>
+<p>In a similar boat. I was saving up for a trip to Japan before the lockdowns happened and now it appears I'll never be able to do it. And it was gonna be my main bucketlist/dream destination for a first time traveling outside the US 😟</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gsjtsye">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_gsmco6m">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/krakah293">krakah293</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Mar 28 2021 21:23:49</span>
+    </p>
+    <div class="collapsible">
+        <p>One of the largest countries on earth while being one of the most geographically diverse.  95000 miles of coast line, alpine forrests, large mountains, expansive plains, endless amounts of lakes and rivers, and weird desert biomes.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gsmco6m">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_gpl5trb">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/BeThePatriarchy">BeThePatriarchy</a>
+        <span class="score"> | 69 points</span>
+        <span class="timestamp"> | Mar 03 2021 22:32:08</span>
+    </p>
+    <div class="collapsible">
+        <p>One thing that covid and all these lockdowns has shown me, as a Canadian where I’m literally the only person I know who is against this; I’ve never even MET someone that doesn’t wear the mask—- it’s made me realize that even if everything goes back to normal tomorrow and it all ends; this isn’t a culture I want to live in long term or raise my future kids in.  (I’m 24M).  </p>
+<p>Not an easy conclusion to come to, but with hearing about Texas opening, I realized that even if Canada does eventually go back to normal, I’m so disappointed and even disgusted with my fellow citizens that I realized I have no home here anyway.  I actually tried going to the states about a month ago on this volunteer farm trip (was gonna do WOOFING If you’ve heard of it), and was denied entry at the airport customs border.  Literally tried going to Texas (just based on what I’ve heard of Texas I thought they’d be the best) just to escape this shit.   But no luck.  Now I’m thinking about either Brazil or potentially Sweden.  I’ve got Irish citizenship so I can work in the EU.  Idk.  Anyone else have similar ideas?  I guess what I’m saying is I’ve lost faith in my country and I want to find a country to live in that’s actually got based people.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpl5trb">permalink</a>
+        </p>
+        <div class="comment" id="t1_gplb0t8">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/infiniutube">infiniutube</a>
+        <span class="score"> | 27 points</span>
+        <span class="timestamp"> | Mar 03 2021 23:13:43</span>
+    </p>
+    <div class="collapsible">
+        <p>Yeah I'm in the same boat, Canadian here as well. The people here are mostly just cowardly sheep. I kinda knew it before Covid, but it's really obvious now.</p>
+<p>I don't know what to do either.</p>
+<p>One good thing about the Canadian govt is that they are very incompetent in general, and aren't as dangerous an entity as the U.S govt. You may have more <em>legal</em> rights in the U.S, but their government is massively larger, and so I think their freedoms are actually at greater risk.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gplb0t8">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gplipmg">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/mekikichee">mekikichee</a>
+        <span class="score"> | 24 points</span>
+        <span class="timestamp"> | Mar 04 2021 00:19:10</span>
+    </p>
+    <div class="collapsible">
+        <p>Canadian here.  I will fight this shit - any means!  </p>
+<p>I feel the same way - I don't want to be here if this is what's coming. And I don't believe there will be somewhere to escape to.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gplipmg">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gplx27x">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Honest-Astronaut">Honest-Astronaut</a>
+        <span class="score"> | 18 points</span>
+        <span class="timestamp"> | Mar 04 2021 02:28:37</span>
+    </p>
+    <div class="collapsible">
+        <p>Canadian also, so far it seems like I can’t talk openly about this with alot of people becuase they react weirdly but do you think vaccine passports will be implemented here?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gplx27x">permalink</a>
+        </p>
+        <div class="comment" id="t1_gpm5rt8">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Datura0602">Datura0602</a>
+        <span class="score"> | 14 points</span>
+        <span class="timestamp"> | Mar 04 2021 03:42:29</span>
+    </p>
+    <div class="collapsible">
+        <p>&rt; do you think vaccine passports will be implemented here?</p>
+<p>If other countries implement them, then yes, Canada will fall into line. The fact that Canada has implemented this insanity of Canadians requiring a covid test on arrival back to Canada and being forced to stay at a prison for $2000 worries me greatly. Today I read of a Canadian couple who arrived back in Vancouver, refused the covid test and then were locked in a room for over 2 hours where they were bullied and threatened to take their drivers license away for 2 years. </p>
+<p>I mean, what the actual fuck. How in the hell are they getting away with this behavior? So I don’t trust Canada one iota anymore, with anything, but especially anything related to covid.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpm5rt8">permalink</a>
+        </p>
+        <div class="comment" id="t1_gpm9ltt">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Honest-Astronaut">Honest-Astronaut</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Mar 04 2021 04:18:21</span>
+    </p>
+    <div class="collapsible">
+        <p>Wow I think you’re right but that shit is scary to think about when do you think it might be implemented? surely not before the vaccine has been widely distributed?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpm9ltt">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gpmiv9t">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Honest-Astronaut">Honest-Astronaut</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Mar 04 2021 05:58:08</span>
+    </p>
+    <div class="collapsible">
+        <p>On another note I’ve made an observation and I’m curious to hear your perspective. My observation might be meaningless though I’m still intrigued. I live far away from military bases in a decent sized city. I’ve always been a night owl but since the start of the everything I’ve noticed a new pattern: same time everynight a millitary plane flies over it didnt happen before seems to have started on april, what do you think?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpmiv9t">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_gpmnccm">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/NoNewAbnormal">NoNewAbnormal</a>
+        <span class="score"> | 10 points</span>
+        <span class="timestamp"> | Mar 04 2021 06:56:48</span>
+    </p>
+    <div class="collapsible">
+        <p>&rt; do you think vaccine passports will be implemented here?</p>
+<p>Without a doubt. This has all been decided long ago.</p>
+<p>This is an old article, but even as articles like that were being published, people were being accused of being conspiracy theorists for discussing it: https://outline.com/EXyfeE</p>
+<p>Even the ID2020 site says it's been in the works since 2016.</p>
+<p>The idea of a vaccine passport is nothing new. This was just the perfect excuse to push the agenda forward.</p>
+<p>Thanks to people's blind obedience and unquestioning submission, the psychopaths at the helm have no qualms targeting the tiny amount of people that object.</p>
+<p>Way more people need to find the fucking balls to just say no. If this guy can, anyone can.  https://newtube.app/user/NoNewAbnormal/LMfub8e</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpmnccm">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gpmrxlz">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/geo-desik">geo-desik</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Mar 04 2021 08:03:36</span>
+    </p>
+    <div class="collapsible">
+        <p>Also cdn, we do have an election semi soon. do you think if someone started campaigning now against all this draconian stuff and instead said we will stand against tyranny people would vote for it but more importantly donate money? Cause you need like 100k to run for pm right ? </p>
+<p>I really don't think as many people are for it as are just afraid to speak up... Squeaky wheel gets the grease tho. </p>
+<p>Or maybe we really on the doorstep of the end.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpmrxlz">permalink</a>
+        </p>
+        <div class="comment" id="t1_gpnc40l">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/IquitosHeat">IquitosHeat</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Mar 04 2021 12:57:56</span>
+    </p>
+    <div class="collapsible">
+        <p>&rt; do you think if someone started campaigning now against all this draconian stuff and instead said we will stand against tyranny people would vote for it but more importantly donate money?</p>
+<p>Your media is controlled by the people who pay for it (the government). </p>
+<p>They will slander, insult and ridicule anyone who goes against the government narrative, especially if that person is running for office in Canada.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpnc40l">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_gpmwz7j">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/cryptoboogaloo">cryptoboogaloo</a>
+        <span class="score"> | 8 points</span>
+        <span class="timestamp"> | Mar 04 2021 09:23:59</span>
+    </p>
+    <div class="collapsible">
+        <p>I live in Canada and feel the exact same way. We had it too good for too long and got soft. Canadians are smug as fuck and think they are super smart when it's the exact opposite. Book smart isn't street smart. We are an embarrassment.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpmwz7j">permalink</a>
+        </p>
+        <div class="comment" id="t1_gpn6ite">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/ProStaff90">ProStaff90</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Mar 04 2021 11:51:33</span>
+    </p>
+    <div class="collapsible">
+        <p>And you had it good primarily because of Harper, not Turdeau</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpn6ite">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_gpmd654">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/xsince">xsince</a>
+        <span class="score"> | 5 points</span>
+        <span class="timestamp"> | Mar 04 2021 04:54:14</span>
+    </p>
+    <div class="collapsible">
+        <p>Same boat here man. Been looking at the states for work. </p>
+<p>I'm absolutely disgusted this shit is still happening and getting worse. </p>
+<p>The most progressive, democratic, liberal nation on the planet? <em>My ass.</em></p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpmd654">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gpnhefn">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/WilhelmvonCatface">WilhelmvonCatface</a>
+        <span class="score"> | 5 points</span>
+        <span class="timestamp"> | Mar 04 2021 13:49:21</span>
+    </p>
+    <div class="collapsible">
+        <p>Don't go to Sweden if your not down with the New Normal. While they have been more relaxed about restrictions, they are down with the technocratic bullshit.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpnhefn">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gpmyrdf">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/selfunderstanding">selfunderstanding</a>
+        <span class="score"> | 4 points</span>
+        <span class="timestamp"> | Mar 04 2021 09:53:08</span>
+    </p>
+    <div class="collapsible">
+        <p>Same thing for me, except I'm in Europe. Don't come here. We're only a step behind you guys. I have realized I have nothing in common with the people here in terms of life values, and it's only going to get a lot worse. I have no idea how I'd do it yet, but I wanna move to the USA. Probably Florida.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpmyrdf">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gpmf9u7">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/itchydan">itchydan</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Mar 04 2021 05:16:47</span>
+    </p>
+    <div class="collapsible">
+        <p>Fellow Canadian checking in. Feel you bro. I have never been more ashamed to be a Canadian and how absolutely cucked the majority of this country is. I've been trying to convince my wife that we should probably flee the country before the hyper inflation hits but she doesn't want to leave.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpmf9u7">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_h1w1jec">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/LinxKinzie">LinxKinzie</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Jun 15 2021 20:27:12</span>
+    </p>
+    <div class="collapsible">
+        <p>I'm just seeing this now and wondering if you've furthered your thoughts on this.</p>
+<p>As an Irish citizen, I would recommend the EU but not Ireland itself. As the saying goes: 'When America sneezes, Ireland gets the flu'.</p>
+<p>Every EU state has it's problems but most seem inane compared to the US and Canada. For example: The Netherlands, Germany, Sweden, Norway and Spain are relatively independent-thinking - but that leads to it's own problems. IMO, you're better off travelling to any non-major city and finding a little space for yourself. Avoid Madrid but consider Granada, as a random example.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/h1w1jec">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gpmouv3">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/CrimsonSun99">CrimsonSun99</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Mar 04 2021 07:18:05</span>
+    </p>
+    <div class="collapsible">
+        <p>We'll take you down in Minnesota, I'd say it's about 50/50 here now which is a healthy balance.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpmouv3">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_gpkt33o">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/WigglyTiger">WigglyTiger</a>
+        <span class="score"> | 39 points</span>
+        <span class="timestamp"> | Mar 03 2021 20:58:02</span>
+    </p>
+    <div class="collapsible">
+        <p>Im totally against vaccine passports on principal, but it seems they already have everything they could possibly need to know about you unfortunately. </p>
+<p>Here's a recent personal example </p>
+<p>Did you know that you can't even buy a last minute international ticket without getting pulled over at the airport for questioning? Happened to me recently, I saw a good deal and wanted to fly next day to another continent. CBP pulled me aside and knew absolutely everything about my life, they got some details wrong so I realized it was all based on some sort of digital database that wasn't super up to date (didn't account for some changed life plans etc). And here's the thing, I never posted online anywhere about some of this stuff, and the only way they would know is from friends/family social media posts or, for one detail, personal messages. On one little detail there's no way anyone would have posted about it online, it was a private matter but they somehow knew. They say it's for "safety" and I'm sure it is, but there's a way bigger security issue here.</p>
+<p>I guess I'm wondering why they would implement these passports if they already have everything on lock it seems. This was within the past few months.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpkt33o">permalink</a>
+        </p>
+        <div class="comment" id="t1_gpkuzvt">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        <span class="score"> | 20 points</span>
+        <span class="timestamp"> | Mar 03 2021 21:11:36</span>
+    </p>
+    <div class="collapsible">
+        <p>I agree with you that we are already widely tracked. Facebook for example is infamous for inferring some very specific details.</p>
+<p>But I can still go to a local coffee shop or restaurant, take no phone, pay with money and, short of face ID cameras becoming widespread, no one will know I was there. Making a passport mandatory, however, greatly simplifies their work and just seals the deal in absolute life tracking. I am sure my local barber would not care about such a thing, <a href="https://www.msn.com/en-us/video/lifestyle/hair-salons-reopen-with-new-virus-rules-in-austria/vi-BB1dvn0i">but if passport scanning is made mandatory to admit patrons, with fines and police enforcement</a>, he will have to cave.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpkuzvt">permalink</a>
+        </p>
+        <div class="comment" id="t1_gpkwvuf">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/WigglyTiger">WigglyTiger</a>
+        <span class="score"> | 7 points</span>
+        <span class="timestamp"> | Mar 03 2021 21:25:21</span>
+    </p>
+    <div class="collapsible">
+        <p>I see. So the concern is more around requiring it for everyday things, not just travel. So far at least in the US I've only seen talks around using it for travel so I was confused by some of the elements in your post, although really appreciate you breaking things down and clarifying.</p>
+<p>What do you think the goal/objective would be for the US government to track things at that level though? Really just "public health"/"safety? Isn't it an obvious personal security risk for not much gain?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpkwvuf">permalink</a>
+        </p>
+        <div class="comment" id="t1_gpkym93">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        <span class="score"> | 20 points</span>
+        <span class="timestamp"> | Mar 03 2021 21:37:58</span>
+    </p>
+    <div class="collapsible">
+        <p>&rt; So far at least in the US I've only seen talks around using it for travel so I was confused by some of the elements in your post</p>
+<p>Well <a href="https://www.theguardian.com/world/2021/feb/28/green-pass-how-are-vaccine-passports-working-in-israel">Israel infamously is using it to segregate people already</a>. EU in general has been vague, the US even more so, but it's best we become aware of what it can be sooner than late.</p>
+<p>&rt; What do you think the goal/objective would be for the US government to track things at that level though? Really just "public health"/"safety? Isn't it an obvious personal security risk for not much gain?</p>
+<p>I cannot speak for what the US government or big corporations want to do with it, but China does use tracking systems to control society, limiting the rights of everyone who is a "criminal", ranging from murderers to activists whose crime is criticizing the government. We cannot say what the system will be used for besides vaccinations, but once it's in place then the possibilities are limitless. We can even assume the government is the good guy and only cares about health, but such a system is a hotbed for exploitation from criminals too (imagine thieves being able to know when someone is away from home). The fact that the media parades this as a very safe and private system is worrying though. I doubt many people understand the personal risk implications of it if the media does not talk about them.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpkym93">permalink</a>
+        </p>
+        <div class="comment" id="t1_gpm4rsf">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/EchoKiloEcho1">EchoKiloEcho1</a>
+        <span class="score"> | 6 points</span>
+        <span class="timestamp"> | Mar 04 2021 03:33:35</span>
+    </p>
+    <div class="collapsible">
+        <p>It’s insane that Israel, of all places, is going down this road so eagerly. People are determined to refuse to learn anything from history it seems.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpm4rsf">permalink</a>
+        </p>
+        <div class="comment" id="t1_gpmpcgy">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/CrimsonSun99">CrimsonSun99</a>
+        <span class="score"> | 4 points</span>
+        <span class="timestamp"> | Mar 04 2021 07:25:07</span>
+    </p>
+    <div class="collapsible">
+        <p>It's not really that surprising to me because Israel has a population that they want to desperately track. This is their excuse to have a complete police state to rid them of the "Palestinian scourge". Now they track them all in real time.</p>
+<p>Interesting that this was the same thing the Germans did (with less technology of course).</p>
+<p>History sure does rhyme.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpmpcgy">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_gpmmahr">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/WigglyTiger">WigglyTiger</a>
+        <span class="score"> | 0 points</span>
+        <span class="timestamp"> | Mar 04 2021 06:42:11</span>
+    </p>
+    <div class="collapsible">
+        <p>Can't you just go onto Agora or whatever the main darknet market is and buy someone's identity who got the vaccine and died sometime after? Some people I know used to do this for fake IDs when we were all underage. Or what would be the security issue here?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpmmahr">permalink</a>
+        </p>
+        <div class="comment" id="t1_gpniap6">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Mar 04 2021 13:57:11</span>
+    </p>
+    <div class="collapsible">
+        <p>&rt; Maybe to the passport you are just "John Doe", but you are the John Doe that checks-in every day to workplace X, that goes every week to Starbucks Y at a small town, that goes every month to state Z. It's not hard for law enforcement to then go around and find out who you are if they know your routine. You have nothing to hide? Until you are in the wrong place at the wrong time again.</p>
+<p>I would say this point applies. Your identity could still be found out if, for some reason, you are "flagged" for investigation (you were in the wrong place at the wrong time), by investigating your routine.</p>
+<p>Now if you did something that you really want to be anonymous, lets say go to a motel to meet your lover every Friday then yes, you can use the fake passport just for that, and it's unlikely it would come back to you. The more you use a passport the less anonymous it becomes. The main difference from fake IDs is that your presence at a place was not logged into a database, just checked by a human.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpniap6">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_gplhis8">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Theshelltree">Theshelltree</a>
+        <span class="score"> | 5 points</span>
+        <span class="timestamp"> | Mar 04 2021 00:08:46</span>
+    </p>
+    <div class="collapsible">
+        <p>This is insane... 😱</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gplhis8">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_gpkegch">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/abednadir86755">abednadir86755</a>
+        <span class="score"> | 33 points</span>
+        <span class="timestamp"> | Mar 03 2021 19:12:39</span>
+    </p>
+    <div class="collapsible">
+        <p>I agree with you on everything except that this "isn't about a vaccine". The vaccine (and its ramifications) are very much tied in with this tracking system. Without the vaccine, there is no tracking system, or at least, no excuse <em>for</em> said tracking system. </p>
+<p>I also think the people who say they will bribe their doctors or fake documents for the vaccine are full of themselves. Hell, all of the doctors I've interacted with are all for the masks, vaccines, and the new normal. I think most of them are being paid quite handsomely to endorse this stuff. Sure, a few might be able to get away with falsifying vaccine records, but as you say with regards to the tracking system, it likely won't last forever. Something will give eventually.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpkegch">permalink</a>
+        </p>
+        <div class="comment" id="t1_gpknexn">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Mylittletony86">Mylittletony86</a>
+        <span class="score"> | 30 points</span>
+        <span class="timestamp"> | Mar 03 2021 20:17:05</span>
+    </p>
+    <div class="collapsible">
+        <p>&rt; Without the vaccine, there is no tracking system, or at least, no excuse <em>for</em> said tracking system. </p>
+<p>I think that's what he meant. That the vaccine is just a means to an end. </p>
+<p>&#x200B;</p>
+<p>&rt;Hell, all of the doctors I've interacted with are all for the masks, vaccines, and the new normal.</p>
+<p>A lot of them aren't.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpknexn">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gpkmxbw">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        <span class="score"> | 24 points</span>
+        <span class="timestamp"> | Mar 03 2021 20:13:32</span>
+    </p>
+    <div class="collapsible">
+        <p>I believe this would have happened after 9/11 if smartphones and the internet were just as widespread back then as they are now (store scanners can be any camera smartphone and any store will have one laying around, plus an internet connection, both of which were rare in 2001). The vaccine is just an excuse in regards to tracking. A "vaccine passport" and an "I-am-exempt-from-the-vaccine passport" are exactly the same tracking-wise.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpkmxbw">permalink</a>
+        </p>
+        <div class="comment" id="t1_gpo41w8">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/abednadir86755">abednadir86755</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Mar 04 2021 16:43:27</span>
+    </p>
+    <div class="collapsible">
+        <p>Except it seems the vaccine is designed to do something to our bodies, and appears to be harmful based on what we've been seeing here. The vaccine are tied together, and yes, it has multiple purposes.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpo41w8">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_gpmbk7f">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/TheCookie_Momster">TheCookie_Momster</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Mar 04 2021 04:37:38</span>
+    </p>
+    <div class="collapsible">
+        <p>I have seen a fair amount of doctors the last few months and I’ve asked all of them their opinion. Every one has said they are waiting and are suspicious on the big push</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpmbk7f">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_gpl8pve">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/hblok">hblok</a>
+        <span class="score"> | 29 points</span>
+        <span class="timestamp"> | Mar 03 2021 22:54:57</span>
+    </p>
+    <div class="collapsible">
+        <p>A great instructive summary on the privacy problems with vaccine passports. Very well written, and I fully agree. </p>
+<p>You should cross-post this to related subs.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpl8pve">permalink</a>
+        </p>
+        <div class="comment" id="t1_gpla0bw">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        <span class="score"> | 13 points</span>
+        <span class="timestamp"> | Mar 03 2021 23:05:22</span>
+    </p>
+    <div class="collapsible">
+        <p>Feel free to do so! I am mostly a lurker anyway.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpla0bw">permalink</a>
+        </p>
+        <div class="comment" id="t1_gpm4hpi">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/EchoKiloEcho1">EchoKiloEcho1</a>
+        <span class="score"> | 5 points</span>
+        <span class="timestamp"> | Mar 04 2021 03:31:04</span>
+    </p>
+    <div class="collapsible">
+        <p>Thank you for taking the time to post this - it’s critically important and most people won’t understand (or even be aware of) these issues with the help of good folks like you. This is a fantastic write up, and raises multiple things I hadn’t considered even though I’m somewhat attuned to all the tracking that happens.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpm4hpi">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_gppbmtc">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/hblok">hblok</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Mar 04 2021 21:50:10</span>
+    </p>
+    <div class="collapsible">
+        <p>Well, that didn't go so well.</p>
+<p>Over at r/StallmanWasRight they didn't bother with the content simply because it came from NNN. I got banned. Oh well.</p>
+<p>I think next time, it would be better to copy/paste instead cross-post.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gppbmtc">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_gpl9bxe">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/WeWantTheFunk73">WeWantTheFunk73</a>
+        <span class="score"> | 26 points</span>
+        <span class="timestamp"> | Mar 03 2021 22:59:51</span>
+    </p>
+    <div class="collapsible">
+        <p>This. It doesn't matter if you actually get the vaccine. Your every movement will be tracked, cataloged, and run through "the algorithm" to determine your compliance and your possibility for "future crime".</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpl9bxe">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gpkxb53">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/BDelacroix">BDelacroix</a>
+        <span class="score"> | 23 points</span>
+        <span class="timestamp"> | Mar 03 2021 21:28:26</span>
+    </p>
+    <div class="collapsible">
+        <p>The nothing to hide argument is so naive.</p>
+<p>I used to have a list of 31 people who had nothing to hide and died for it.  Sadly the list was on the web and has been scrubbed.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpkxb53">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gpmbb3p">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/forced_pronoia">forced_pronoia</a>
+        <span class="score"> | 16 points</span>
+        <span class="timestamp"> | Mar 04 2021 04:35:05</span>
+    </p>
+    <div class="collapsible">
+        <p>Very interesting points but you're missing the main purpose of the system.</p>
+<p>It's a PERMISSION system not a tracking system.</p>
+<p>And the elites will ALWAYS get green because they'll have the special server flag set. No testing or vaccines required for them. The fact that the rest of us will need to be injected with whatever the government wants, to get permission to, basically, exist, is appalling. And it's unlikely to stop there. If these systems get in place for long periods of time, there's no telling what radical demands will be placed on the users. They could force you to do literally anything with attempted suicide being the only way out.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpmbb3p">permalink</a>
+        </p>
+        <div class="comment" id="t1_gppc3o0">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/hblok">hblok</a>
+        <span class="score"> | 6 points</span>
+        <span class="timestamp"> | Mar 04 2021 21:53:37</span>
+    </p>
+    <div class="collapsible">
+        <p>You're right that the elites will be exempt.</p>
+<p>However, focusing on the privacy invasive part of the tracking is a legit concern, even if there are also other problems with the system.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gppc3o0">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_gpkcy67">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/philipkfrig">philipkfrig</a>
+        <span class="score"> | 15 points</span>
+        <span class="timestamp"> | Mar 03 2021 19:01:38</span>
+    </p>
+    <div class="collapsible">
+        <p>Great post, thank you</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpkcy67">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gpkkmbs">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Glenduil">Glenduil</a>
+        <span class="score"> | 13 points</span>
+        <span class="timestamp"> | Mar 03 2021 19:56:43</span>
+    </p>
+    <div class="collapsible">
+        <p>You're forgetting the human element.  It's easy to fill out the paper form <a href="https://health.wyo.gov/wp-content/uploads/2020/10/2020-COVID-19-shot-card-2b.pdf">here</a> and take that to your favorite hospital, submit it, and get put on the server you're talking about.  The human element is always the absolute weakest link and can never be fixed by computer programmers.</p>
+<p>It's a huge back door and one I plan to exploit the instant America gets this monstrosity.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpkkmbs">permalink</a>
+        </p>
+        <div class="comment" id="t1_gpklz47">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        <span class="score"> | 19 points</span>
+        <span class="timestamp"> | Mar 03 2021 20:06:36</span>
+    </p>
+    <div class="collapsible">
+        <p>&rt; "I'll get my doctor friend to forge an exemption": Sure, you can escape the vaccine, but you still have to present your "exempt" passport, hence you are tracked just as anyone else. Same logic for negative tests, or for someone who was already infected. You are still an ID being associated with places. Should the purpose of the system be to track you, then it doesn't matter whether you have a vaccine or not, just that you comply with mandatory identification.</p>
+<p>This point applies. You do not have the vaccine, but your whereabouts will be tracked regardless. That is why I say the vaccine is just an excuse, and this could have happened after 9/11 as well. The point is that your every move will be logged. The only workaround is if you went to the hospital every day to get a new passport. And that will not work anymore if the passport becomes biometric based (face ID).</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpklz47">permalink</a>
+        </p>
+        <div class="comment" id="t1_gpkp25l">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Glenduil">Glenduil</a>
+        <span class="score"> | -2 points</span>
+        <span class="timestamp"> | Mar 03 2021 20:29:05</span>
+    </p>
+    <div class="collapsible">
+        <p>In the start of any database, the initial dump of data is always lax in security. I'll submit my paperwork just like everyone else will do and get added to the server. </p>
+<p>Right now in America, there is no secure vaccine system. It has to be both built and populated.  The human element applies and any good programmer knows this.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpkp25l">permalink</a>
+        </p>
+        <div class="comment" id="t1_gpkpsip">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        <span class="score"> | 14 points</span>
+        <span class="timestamp"> | Mar 03 2021 20:34:22</span>
+    </p>
+    <div class="collapsible">
+        <p>That is not my point. Yes, you will "have a vaccine" for all intents and purposes. Yes, they will grant you a passport. That is not the problem.</p>
+<p>The problem is that then you will go about your daily life, going to the restaurant and having that passport scanned. Going to work and having that passport scanned. Everything you do will be stored in a server, regardless of whether you have a vaccine, a fake passport or a medical exemption. The system will track you and that is my whole point with the post. Do you want to have every place you have ever gone to logged in a database?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpkpsip">permalink</a>
+        </p>
+        <div class="comment" id="t1_gpkt37g">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/bri8985">bri8985</a>
+        <span class="score"> | 12 points</span>
+        <span class="timestamp"> | Mar 03 2021 20:58:03</span>
+    </p>
+    <div class="collapsible">
+        <p>100% agreed, this is a much easier system to implement than cameras as done in China to track every person. Or maybe this is just getting people warmed up to the idea of full tracking via camera. </p>
+<p>Don’t also forget during your doctors visit they can say vax no longer working and you need more. Or you have not met your 5 exercises a week you are banned from this set of restaurants. </p>
+<p>Allows the govt to normalize creating classes of citizens. Once the govt gets power they will only push harder</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpkt37g">permalink</a>
+        </p>
+        <div class="comment" id="t1_gpmq129">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/CrimsonSun99">CrimsonSun99</a>
+        <span class="score"> | 0 points</span>
+        <span class="timestamp"> | Mar 04 2021 07:34:58</span>
+    </p>
+    <div class="collapsible">
+        <p>bUt iT's fOr tHe GrEaTeR gOoD</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpmq129">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_gpkr0rq">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Glenduil">Glenduil</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Mar 03 2021 20:43:14</span>
+    </p>
+    <div class="collapsible">
+        <p>If that happens, I won't have a choice.  No one will.  Of course I don't want to live like that.  Duh.  Who would?  </p>
+<p>When I go to a restaurant now with my roommate, I always give fake information (Fox Mulder and Dana Scully with the phone number for the state's FBI building for those X-Files fans).  I will always resist, but that was not the point I was making.  I will always give as much false information as I can.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpkr0rq">permalink</a>
+        </p>
+        <div class="comment" id="t1_gpkshno">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        <span class="score"> | 11 points</span>
+        <span class="timestamp"> | Mar 03 2021 20:53:45</span>
+    </p>
+    <div class="collapsible">
+        <p>We can agree that during bootstrapping the system can be easily forged, it's the implications of the daily use that moved me to post this. If we only focus on dodging the system now but accept the passport thinking that a fake vaccine is enough they will have gotten their way with it (tracking people) regardless.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpkshno">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_gpkvkkk">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/AdministrativeRush11">AdministrativeRush11</a>
+        <span class="score"> | 0 points</span>
+        <span class="timestamp"> | Mar 03 2021 21:15:47</span>
+    </p>
+    <div class="collapsible">
+        <p>Expect to see a thriving black market of fake second IDs.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpkvkkk">permalink</a>
+        </p>
+        <div class="comment" id="t1_gpkwm4e">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        <span class="score"> | 8 points</span>
+        <span class="timestamp"> | Mar 03 2021 21:23:22</span>
+    </p>
+    <div class="collapsible">
+        <p>If you manage to get a new fake passport each time you visit a store then by all means, it will be very hard to track who you are.</p>
+<p>If you use the same fake passport everywhere then it is still possible to infer who you are.</p>
+<p>If the passport becomes biometric, only changing your face for each store visit would help you then.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpkwm4e">permalink</a>
+        </p>
+        <div class="comment" id="t1_gplga4p">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/01johnnycomelately10">01johnnycomelately10</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Mar 03 2021 23:57:56</span>
+    </p>
+    <div class="collapsible">
+        <p>Please forgive my ignorance, but are you saying the vax passport will be implanted in one's face?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gplga4p">permalink</a>
+        </p>
+        <div class="comment" id="t1_gpljmq8">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Mar 04 2021 00:27:12</span>
+    </p>
+    <div class="collapsible">
+        <p>I am saying <a href="https://en.wikipedia.org/wiki/Facial_recognition_system">facial recognition</a> can be used to replace the need of having a paper or phone passport. I was being ironic saying that the only workaround for that would be to change one's face.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpljmq8">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gpm6hu6">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/migrod1">migrod1</a>
+        <span class="score"> | 0 points</span>
+        <span class="timestamp"> | Mar 04 2021 03:49:10</span>
+    </p>
+    <div class="collapsible">
+        <p>Not OP, but I think an app is just a stepping stone to this <a href="https://news.mit.edu/2019/storing-vaccine-history-skin-1218">https://news.mit.edu/2019/storing-vaccine-history-skin-1218</a>  </p>
+<p>Even more "convenient" they'll say.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpm6hu6">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_gpndoog">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/AdministrativeRush11">AdministrativeRush11</a>
+        <span class="score"> | 0 points</span>
+        <span class="timestamp"> | Mar 04 2021 13:14:27</span>
+    </p>
+    <div class="collapsible">
+        <p>Yes, for sure, but the idea is not to evade tracking completely. That would raise suspicion. In an authoritarian state you kind of accept this, and plan for the worst case scenario, your fake IDs are a last resource. Something you use to escape, or to at least hide yourself from vigilance in specific situations. </p>
+<p>It is not too much different from the usage of fake documents by criminals, and it makes sense, as in a authoritarian state everyone is considered potentially a criminal by the State.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpndoog">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_gpkpylc">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/VividInitial5404">VividInitial5404</a>
+        <span class="score"> | 12 points</span>
+        <span class="timestamp"> | Mar 03 2021 20:35:34</span>
+    </p>
+    <div class="collapsible">
+        <p>in short terms: the mark of the beast!</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpkpylc">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gpl0cir">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/estatespellsblend">estatespellsblend</a>
+        <span class="score"> | 11 points</span>
+        <span class="timestamp"> | Mar 03 2021 21:50:37</span>
+    </p>
+    <div class="collapsible">
+        <p>This post is fantastic. I hope it will make people wake up! 
+It’s all about digital ids. They try and put a positive spin on it: https://id2020.org/ but check this out for how the UK plans on using it: https://www.gov.uk/government/publications/the-uk-digital-identity-and-attributes-trust-framework
+Read it and weep.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpl0cir">permalink</a>
+        </p>
+        <div class="comment" id="t1_gtycy8u">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/jsweetie2">jsweetie2</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Apr 09 2021 17:38:14</span>
+    </p>
+    <div class="collapsible">
+        <p>How the hell is this not all over the news?!</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gtycy8u">permalink</a>
+        </p>
+        <div class="comment" id="t1_gtyn2qn">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/estatespellsblend">estatespellsblend</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Apr 09 2021 18:53:20</span>
+    </p>
+    <div class="collapsible">
+        <p>I ask myself that question every day. There’s an extremely rude awakening on the horizon.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gtyn2qn">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_gpl82zg">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/readyreadyreadyready">readyreadyreadyready</a>
+        <span class="score"> | 11 points</span>
+        <span class="timestamp"> | Mar 03 2021 22:49:57</span>
+    </p>
+    <div class="collapsible">
+        <p>Thank god for monero. Might need to use dark web markets to buy food before this is over</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpl82zg">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gplnncp">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Dizzyponcho">Dizzyponcho</a>
+        <span class="score"> | 9 points</span>
+        <span class="timestamp"> | Mar 04 2021 01:08:22</span>
+    </p>
+    <div class="collapsible">
+        <p>What can we do to stop this from happening. I think there's decent support but how do we organise?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gplnncp">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gpm8ux3">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Godofthechicken">Godofthechicken</a>
+        <span class="score"> | 9 points</span>
+        <span class="timestamp"> | Mar 04 2021 04:11:16</span>
+    </p>
+    <div class="collapsible">
+        <p>Go full nomad and stock up on guns. It's the only option.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpm8ux3">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gpkygc4">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/mckinnes">mckinnes</a>
+        <span class="score"> | 7 points</span>
+        <span class="timestamp"> | Mar 03 2021 21:36:46</span>
+    </p>
+    <div class="collapsible">
+        <p>This is normie level really.. it alot darker then this. Think transhuman.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpkygc4">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gpljtpp">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/CrazyPurpleFuck">CrazyPurpleFuck</a>
+        <span class="score"> | 7 points</span>
+        <span class="timestamp"> | Mar 04 2021 00:28:55</span>
+    </p>
+    <div class="collapsible">
+        <p>Thank you for your very informative post!  I absolutely agree with you.  “They” have had this planned out for years now and there is no way we can forge at this point. It’s not like the good old days by any means.  We are truly fucked for what I’ve learned and what I’m seeing now.  Thanks much again and I wish you the best along with the rest of us. Hopefully people have/and are prepping and planning, if you are smart enough to not conform to this corrupt bullshit that is...</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpljtpp">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gpm56x5">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/BigBadBakery">BigBadBakery</a>
+        <span class="score"> | 6 points</span>
+        <span class="timestamp"> | Mar 04 2021 03:37:18</span>
+    </p>
+    <div class="collapsible">
+        <p>This needs to be posted all over the internet. Its true and believable. Post to conspiracy. They have 1.5m subscribers</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpm56x5">permalink</a>
+        </p>
+        <div class="comment" id="t1_gppceby">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/hblok">hblok</a>
+        <span class="score"> | 10 points</span>
+        <span class="timestamp"> | Mar 04 2021 21:55:47</span>
+    </p>
+    <div class="collapsible">
+        <p>I did a few cross-posts already.</p>
+<p>However, people are triggering on NNN instead of reading the post.</p>
+<p>So better just copy/paste the whole thing where you want it to be, without linking directly here.</p>
+<p>OP already deleted his account, it seems.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gppceby">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_gpmow69">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/AlessandoRhazi">AlessandoRhazi</a>
+        <span class="score"> | 6 points</span>
+        <span class="timestamp"> | Mar 04 2021 07:18:36</span>
+    </p>
+    <div class="collapsible">
+        <p>As a fellow computer engineer, I do completely agree with all you said.
+Any data possible will be sucked up, abused and stored.</p>
+<p>What I fear is the ability to delete you. You can of course get your passport invalidated and stoped at the border or your credit card blocked, but with covid passport one server (as a design not a machine) will control your entire life.
+Even if you assume no malicious actions, think about how unprofessional and fucked up governments and bureaucrats are.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpmow69">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gplkav8">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Aggravating_Refuse89">Aggravating_Refuse89</a>
+        <span class="score"> | 5 points</span>
+        <span class="timestamp"> | Mar 04 2021 00:33:46</span>
+    </p>
+    <div class="collapsible">
+        <p>I like everything you said except that you could accept the chinese credit system. I cannot get behind that at any level. Otherwise you nailed my feelings on this</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gplkav8">permalink</a>
+        </p>
+        <div class="comment" id="t1_gplkxgd">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        <span class="score"> | 8 points</span>
+        <span class="timestamp"> | Mar 04 2021 00:40:35</span>
+    </p>
+    <div class="collapsible">
+        <p>The thing I mentioned I do not mind in the beginning is the vaccine. I do not really mind it much after it's well tested, but I am against any form of tracking, social credit being the worst offender of all. Sorry if my phrasing was not clear.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gplkxgd">permalink</a>
+        </p>
+        <div class="comment" id="t1_gpm33ei">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Aggravating_Refuse89">Aggravating_Refuse89</a>
+        <span class="score"> | 5 points</span>
+        <span class="timestamp"> | Mar 04 2021 03:19:13</span>
+    </p>
+    <div class="collapsible">
+        <p>My apologies for misunderstanding. I  actually agree. I'm against mandatory vaccines and would like to see this one play out a while but it's the big brothery stuff I really freak out about</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpm33ei">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_gplklxf">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Mar 04 2021 00:37:06</span>
+    </p>
+    <div class="collapsible">
+        <p>[deleted]</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gplklxf">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_gpln714">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/enrique-sfw">enrique-sfw</a>
+        <span class="score"> | 5 points</span>
+        <span class="timestamp"> | Mar 04 2021 01:03:57</span>
+    </p>
+    <div class="collapsible">
+        <ul>
+<li>slow clap *</li>
+</ul>
+<p>Couldn't agree more with your assessment, mate.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpln714">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gpmpu46">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/PassSetword">PassSetword</a>
+        <span class="score"> | 4 points</span>
+        <span class="timestamp"> | Mar 04 2021 07:32:08</span>
+    </p>
+    <div class="collapsible">
+        <p>Patent 2020060606.</p>
+<p>The first vaccine passport is only temporary. It has to go in steps. In the end they want people to carry a digital ID in their body, always connected to the 5G cloud.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpmpu46">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gppbe65">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/hblok">hblok</a>
+        <span class="score"> | 3 points</span>
+        <span class="timestamp"> | Mar 04 2021 21:48:24</span>
+    </p>
+    <div class="collapsible">
+        <p>Interesting. OP deleted his account.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gppbe65">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gpmzjzd">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/acheampong64">acheampong64</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Mar 04 2021 10:06:01</span>
+    </p>
+    <div class="collapsible">
+        <p>hehee,,,the Chinese social credit system lol. The world is gradually becoming a funny place</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpmzjzd">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gple9hs">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/TinyWightSpider">TinyWightSpider</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Mar 03 2021 23:40:40</span>
+    </p>
+    <div class="collapsible">
+        <p>So like medical marijuana cards.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gple9hs">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gpm8gps">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/ktmmotochick">ktmmotochick</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Mar 04 2021 04:07:32</span>
+    </p>
+    <div class="collapsible">
+        <p>I like how you think we still have freedom....</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpm8gps">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gpmdcts">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Mar 04 2021 04:56:11</span>
+    </p>
+    <div class="collapsible">
+        <p>[deleted]</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpmdcts">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gpkg8wx">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        <span class="score"> | 0 points</span>
+        <span class="timestamp"> | Mar 03 2021 19:25:38</span>
+    </p>
+    <div class="collapsible">
+        <p>[deleted]</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpkg8wx">permalink</a>
+        </p>
+        <div class="comment" id="t1_gpkihoe">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Mar 03 2021 19:41:24</span>
+    </p>
+    <div class="collapsible">
+        <p>[removed]</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpkihoe">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_gpllwh1">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/A-random-acct">A-random-acct</a>
+        <span class="score"> | 0 points</span>
+        <span class="timestamp"> | Mar 04 2021 00:50:47</span>
+    </p>
+    <div class="collapsible">
+        <p>Mmm I see what you’re saying. And might agree with the premise but it could absolutely be done with encryption keys.  Completely identity less.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpllwh1">permalink</a>
+        </p>
+        <div class="comment" id="t1_gplnx33">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        <span class="score"> | 8 points</span>
+        <span class="timestamp"> | Mar 04 2021 01:10:59</span>
+    </p>
+    <div class="collapsible">
+        <p>I talk about those too. You cannot just throw "encryption" at something and be done with it. Those approaches still have a lot of problems. Is the owner of the keys trustworthy? Even if so, identity can still be found via inference or side-channel attacks.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gplnx33">permalink</a>
+        </p>
+        <div class="comment" id="t1_gplz590">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/A-random-acct">A-random-acct</a>
+        <span class="score"> | -1 points</span>
+        <span class="timestamp"> | Mar 04 2021 02:45:38</span>
+    </p>
+    <div class="collapsible">
+        <p>I’d think you could get a huge amount of privacy and security for a large amount of the population with the private key stores on Apple/Android. The keys are reasonably secure. </p>
+<p>I mean I guess you could issue people some kind of token or app to do it as well. Open source the app, have it vettted by the privacy/security community. Something along the lines of the axolotl ratchet protocol signal uses.</p>
+<p>I’m opposed to the idea but I believe it could be done with privacy in mind. It’s incredibly unlikely it’ll be implemented thar way though.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gplz590">permalink</a>
+        </p>
+        <div class="comment" id="t1_gpm1m1j">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        <span class="score"> | 6 points</span>
+        <span class="timestamp"> | Mar 04 2021 03:06:27</span>
+    </p>
+    <div class="collapsible">
+        <p>Even then you have to trust something blindly, because the system cannot be fully open-source. You would have to open-source whatever is inside the scanners (assuming they are just smartphones it will never happen Apple-wise), down to the CPU if you want to be really sure, and even then it's prone to zero-day attacks. Even iPhones are not uncrackable.</p>
+<p>Then there is the whole question of, even if the system is publicly verified and audited, how can anyone really be sure that it's that exact system that they are using in practice and not another one? There are hardware enclaves to try and solve that, but then you will have to trust their manufacturer. Given Intel's <a href="https://www.zdnet.com/article/minix-intels-hidden-in-chip-operating-system/">track record in hardware dependability</a>, I will wager they are not to be trusted.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpm1m1j">permalink</a>
+        </p>
+        <div class="comment" id="t1_gpm5cl5">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/A-random-acct">A-random-acct</a>
+        <span class="score"> | -1 points</span>
+        <span class="timestamp"> | Mar 04 2021 03:38:42</span>
+    </p>
+    <div class="collapsible">
+        <p>You seem to be looking for something with 100% perfect security. It’s simply not possible. Everything including security outside of technology is built to essentially “good enough” standards.  Anything can be broken into and/or subverted with enough resources.  </p>
+<p>I believe Estonia is well on their way to a full digital society. At some point it’s likely inevitable.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpm5cl5">permalink</a>
+        </p>
+        <div class="comment" id="t1_gpm9u10">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        <span class="score"> | 6 points</span>
+        <span class="timestamp"> | Mar 04 2021 04:20:32</span>
+    </p>
+    <div class="collapsible">
+        <p>&rt; You seem to be looking for something with 100% perfect security. It’s simply not possible.</p>
+<p>What would be a good trust base for such a system? Having in mind that, being mandatory for hundreds of millions in the least, should be held up to the highest standards. To me, there are just too many variables to account for the system to be viable, the ethical side of it a significant one. And having seen how things work out in real life, it will not be nowhere near as safe as its security model describes.</p>
+<p>Currently I can still go to the restaurant without a phone and pay with cash, same for groceries or even going to the cinema. A system like what is being implemented in Israel just closes that (significant) gap.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpm9u10">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gpm85v7">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | Mar 04 2021 04:04:45</span>
+    </p>
+    <div class="collapsible">
+        <p>[deleted]</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpm85v7">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_gpn3jhf">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/albwalb">albwalb</a>
+        <span class="score"> | 0 points</span>
+        <span class="timestamp"> | Mar 04 2021 11:09:14</span>
+    </p>
+    <div class="collapsible">
+        <p>It's easier than you think, if you own a store just ignore those rules and allow anyone to buy inside.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpn3jhf">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gpkqad1">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/llamanuggets">llamanuggets</a>
+        <span class="score"> | -2 points</span>
+        <span class="timestamp"> | Mar 03 2021 20:37:58</span>
+    </p>
+    <div class="collapsible">
+        <p>Aren’t our movements already tracked via cellphones? Or is a vaccine passport more personal than tracking a cellphone?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpkqad1">permalink</a>
+        </p>
+        <div class="comment" id="t1_gpkqgik">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        <span class="score"> | 26 points</span>
+        <span class="timestamp"> | Mar 03 2021 20:39:13</span>
+    </p>
+    <div class="collapsible">
+        <p>Is it mandatory to have a phone?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpkqgik">permalink</a>
+        </p>
+        <div class="comment" id="t1_gpkwrwn">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/llamanuggets">llamanuggets</a>
+        <span class="score"> | 2 points</span>
+        <span class="timestamp"> | Mar 03 2021 21:24:33</span>
+    </p>
+    <div class="collapsible">
+        <p>No, good point, but that doesn’t change the fact that almost everyone has one.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpkwrwn">permalink</a>
+        </p>
+        <div class="comment" id="t1_gplasqv">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/hblok">hblok</a>
+        <span class="score"> | 16 points</span>
+        <span class="timestamp"> | Mar 03 2021 23:11:50</span>
+    </p>
+    <div class="collapsible">
+        <p>If you carry your phone, then yes, the tracking can be even more precise than what OP describes with the ID scanners.</p>
+<p>However, as he points out, they are not required and you can "opt-out" at any point, even temporarily, by not taking it with you. You'd still be able to go about your day.</p>
+<p>The darker side of the vaccination passport scenario assumes that you will be discriminated against or even barred from entering normal places and part-taking in normal activities. Including your job, shopping for good, traveling.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gplasqv">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_gpkei51">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Rolder">Rolder</a>
+        <span class="score"> | -35 points</span>
+        <span class="timestamp"> | Mar 03 2021 19:13:02</span>
+    </p>
+    <div class="collapsible">
+        <p>You are aware that things like the International Certificate of Vaccination have existed since roughly the 1930s or so right? This is hardly a new phenomena</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpkei51">permalink</a>
+        </p>
+        <div class="comment" id="t1_gpkmhpt">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/AdamPanzerfaustian">AdamPanzerfaustian</a>
+        <span class="score"> | 28 points</span>
+        <span class="timestamp"> | Mar 03 2021 20:10:22</span>
+    </p>
+    <div class="collapsible">
+        <p>It's like you didn't read the post at all, or are too bird-brained to care.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpkmhpt">permalink</a>
+        </p>
+        <div class="comment" id="t1_gpkv9f6">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        [deleted]
+        <span class="score"> | 13 points</span>
+        <span class="timestamp"> | Mar 03 2021 21:13:32</span>
+    </p>
+    <div class="collapsible">
+        <p>[deleted]</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpkv9f6">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gpkufhc">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/Rolder">Rolder</a>
+        <span class="score"> | -21 points</span>
+        <span class="timestamp"> | Mar 03 2021 21:07:27</span>
+    </p>
+    <div class="collapsible">
+        <p>All the post is, is pointless braindead fear mongering. For people that hate fear mongering about lockdowns and stuff, you sure do a lot of it yourselves.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpkufhc">permalink</a>
+        </p>
+        <div class="comment" id="t1_gpkvaq8">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/AdamPanzerfaustian">AdamPanzerfaustian</a>
+        <span class="score"> | 24 points</span>
+        <span class="timestamp"> | Mar 03 2021 21:13:49</span>
+    </p>
+    <div class="collapsible">
+        <p>Imagine fearmongering over a rather mild virus for over a year and then accusing people exposing stuff that is going on out in the open as fearmongers.</p>
+<p>What a brain dead sheep you are. Sad.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gpkvaq8">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div>
+    </div>
+</div>
+
+<div class="comment" id="t1_gplcguh">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/hblok">hblok</a>
+        <span class="score"> | 11 points</span>
+        <span class="timestamp"> | Mar 03 2021 23:25:42</span>
+    </p>
+    <div class="collapsible">
+        <p>&rt;International Certificate of Vaccination</p>
+<p>Indeed, it's been around for a long time. This is not what OP is talking about. You just have to look at the wiki page to see the difference:</p>
+<p><a href="https://en.wikipedia.org/wiki/International_Certificate_of_Vaccination_or_Prophylaxis">https://en.wikipedia.org/wiki/International_Certificate_of_Vaccination_or_Prophylaxis</a></p>
+<p>Study the scans of the pages, and notice that there are no IDs, besides maybe a scribbled name. There are no barcodes, QR codes. Despite being called a "passport" in the article, it really isn't. It doesn't <em>identify</em> you like a normal national password would. Although, as OP points out, in a very few rare cases, it has <em>authorized</em> you to enter certain countries.</p>
+<p>OP's scenario assumes that the new covid passport will be all digital. Most likely on your phone, but a QR code on a piece of paper does the same job. You've maybe seen them on concert tickets or airline tickets. Same thing. It identifies you by matching the scanned ID number to a database that already has all your other information. And at that point, it also adds a record of the fact that it was scanned.</p>
+<p>&#x200B;</p>
+<p>Now, you might object that this is harmless. However, there have already been interesting cases where random innocent bystanders have been pulled in by a police drag-net approach. My favorite was a cyclist in NY who was questioned because he happened to cycle past a shop where a robbery was taking place. How did the police know? They subpoenaed Google Android &amp; Maps for <em>all the phones in the area at the time</em>.</p>
+<p>OP's scenario might be dystopian. However, technically, it is by no means far-fetched. In fact, all the technology needed is already implemented cheap and in daily use today.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/lx0qlg/_/gplcguh">permalink</a>
+        </p>
+        
+    </div>
+</div>
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

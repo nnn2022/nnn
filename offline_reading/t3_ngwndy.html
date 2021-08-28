@@ -1,0 +1,96 @@
+<html>
+<head>
+<title>Now that's something to think about</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.comment
+{
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border: 2px #000 solid;
+}
+.submission
+{
+    border: 4px #00f solid;
+    padding-left: 20px;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_ngwndy">
+    <p class="userinfo">
+        <a href="https://www.reddit.com/u/JayJaying">JayJaying</a>
+        <span class="score"> | 0 points</span>
+        <span class="timestamp"> | May 20 2021 10:31:14</span>
+    </p>
+    <strong>Now that's something to think about</strong>
+    <p><a href="https://i.redd.it/9s5tsikb69071.png">https://i.redd.it/9s5tsikb69071.png</a></p>
+    <p class="toolbar">
+        <a href="https://www.reddit.com/r/NoNewNormal/comments/ngwndy">permalink</a>
+    </p>
+</div>
+<div class="comment" id="t1_gyt3tp3">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/thecatgod77777">thecatgod77777</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | May 20 2021 11:02:43</span>
+    </p>
+    <div class="collapsible">
+        <p>How does that make sense?</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/ngwndy/_/gyt3tp3">permalink</a>
+        </p>
+        
+    </div>
+</div>
+
+<div class="comment" id="t1_gyt7b3o">
+    <p class="userinfo">
+        <a
+        class="toggle_hide_button"
+        href="javascript:void(0)"
+        onclick="toggle_collapse(this.parentElement.parentElement)">[-]
+        </a>
+        <a href="https://www.reddit.com/u/WilhelmvonCatface">WilhelmvonCatface</a>
+        <span class="score"> | 1 points</span>
+        <span class="timestamp"> | May 20 2021 11:36:55</span>
+    </p>
+    <div class="collapsible">
+        <p>Turns out I'm a zombie because I love me some roasted curried brains.</p>
+        <p class="toolbar">
+            <a href="https://www.reddit.com/r/NoNewNormal/comments/ngwndy/_/gyt7b3o">permalink</a>
+        </p>
+        
+    </div>
+</div></body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>

@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>I got 8 comments. 3 are bs, 3 are my replies to the bs, and 2 were links to the adverse effects. Now the latter 2 are missing. I still have 8 comments, but I can only look at 6 of them. Did Reddit seriously hide those comments from me?</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<style>
+.comment
+{
+    padding-left: 20px;
+    margin-top: 4px;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    border: 2px #000 solid;
+}
+.submission
+{
+    border: 4px #00f solid;
+    padding-left: 20px;
+}
+.hidden
+{
+    display: none;
+}
+</style>
+</head>
+<body><div class="submission" id="t3_ohi1ka">
+    <p class="userinfo">
+        <a href="https://www.reddit.com/u/TheLoneHussar">TheLoneHussar</a>
+        <span class="score"> | 0 points</span>
+        <span class="timestamp"> | Jul 10 2021 12:44:39</span>
+    </p>
+    <strong>I got 8 comments. 3 are bs, 3 are my replies to the bs, and 2 were links to the adverse effects. Now the latter 2 are missing. I still have 8 comments, but I can only look at 6 of them. Did Reddit seriously hide those comments from me?</strong>
+    <p><a href="https://www.reddit.com/gallery/ohi1ka">https://www.reddit.com/gallery/ohi1ka</a></p>
+    <p class="toolbar">
+        <a href="https://www.reddit.com/r/NoNewNormal/comments/ohi1ka">permalink</a>
+    </p>
+</div>
+</body>
+
+<script>
+function toggle_collapse(comment_div)
+{
+    var button = comment_div.getElementsByClassName("toggle_hide_button")[0];
+    var collapsible = comment_div.getElementsByClassName("collapsible")[0];
+    if (collapsible.classList.contains("hidden"))
+    {
+        collapsible.classList.remove("hidden");
+        button.innerText = "[-]";
+    }
+    else
+    {
+        collapsible.classList.add("hidden");
+        button.innerText = "[+]";
+    }
+}
+</script>
+</html>
